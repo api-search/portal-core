@@ -1,0 +1,254 @@
+---
+# APIs JSON/YAML Specification Details
+specificationVersion: '0.1'
+specificationType: 'Platform'
+
+
+# Overview of this API
+name: API Platform
+description: This is an APIs JSON/YAML definition providing a product view of a single API, providing a template of possible building blocks that can be used to govern the consistent delivery of APIs via a common platform.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: http://example.com/apis-platform.json
+
+
+# Tags for helping organize
+tags:
+
+  - APIs
+  - Search Engine
+  - Directory
+
+
+# Time frame for API evolution
+created: '2023-07-26'
+modified: '2023-08-05'
+
+
+# Design
+# Pre-Release    
+# Active
+# Recommended
+# Retired
+# Deprecated
+maturity: 'Active'
+
+
+# Public
+# Partner
+# Internal
+# Group
+# Team
+access: 'Internal'
+
+
+apis:
+ 
+  - name: APIs.io API
+    description: Access data about the apis and maintainers listed on apis.io.
+    image: http://apis.io/logo_square.png
+    humanURL: http://apis.io/api
+    baseURL: http://apis.io/api/
+
+    regions:
+
+      - name: us-west
+      - name: us-east     
+        
+    tags:
+    
+      - APIs
+      - Search Engine
+      - Directory
+    
+    properties:
+
+      # Requirements
+      - type: api-business-requirements
+        description: Provides the business requirement used to deliver an API.
+        url: http://example.com/business/requirements/   
+
+      - type: api-security-requirements
+        description: Provides the security requirement used to deliver an API.
+        url: http://example.com/security/requirements/           
+
+
+      # Workspaces
+      - type: postman-public-workspace
+        url: https://www.postman.com/api-evangelist/workspace/apis-io/overview        
+
+      - type: github-repository
+        url: 'https://github.com/apis-json/apis-io-api/issues' 
+
+
+      # Rules
+      - type: consumer-rules
+        url: http://example.com/consumer/rules/ 
+      - type: product-rules
+        url: http://example.com/consumer/rules/   
+      - type: platform-rules
+        url: http://example.com/consumer/rules/                 
+
+
+      # Contracts
+      - type: OpenAPI
+        url: https://example.com/openapi.yml
+
+
+      # Documentation
+      - type: documentation
+        url: http://example.com/regions/ 
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-7d657926-0fe2-4527-b475-93ca3e0e68b2           
+
+
+      # Deployment
+      - type: github-action
+        url: 'https://github.com/org/repo/actions'
+
+      - type: aws-api-gateway
+        url: 'https://uab3sjk0mna.execute-api.us-east-1.amazonaws.com'
+
+
+      # Management
+      - type: api-getting-started
+        url: 'https://example.com/getting-started/'  
+
+      - type: api-plans
+        url: 'https://console.aws.amazon.com/apigateway/home?#/usage-plans/'         
+
+      - type: api-keys
+        url: 'https://console.aws.amazon.com/apigateway/home?#/keys/'       
+
+      - type: api-authentication
+        url: http://example.com/authentication/             
+
+
+      # Environments
+      - type: api-environment-sandbox
+        url: http://example.com/environment/sandbox/  
+
+      - type: api-environment-staging
+        url: http://example.com/environment/staging/          
+
+      - type: api-environment-prduction
+        url: http://example.com/environment/production/  
+
+
+      # Change
+      - type: api-road-map
+        url: https://github.com/apis-json/apis-io-api/blob/main/road-map.md
+
+      - type: api-change-log
+        url: https://github.com/apis-json/apis-io-api/blob/main/change-log.md                              
+
+
+      # SDKs
+      - type: api-sdk-python
+        url: http://example.com/sdk/python/                        
+
+      - type: api-sdk-go
+        url: http://example.com/sdk/go/
+
+      - type: api-sdk-node
+        url: http://example.com/sdk/node/       
+
+
+      # Tests
+      - type: api-contract-tests
+        url: http://example.com/contract/tests/  
+
+      - type: api-integration-tests
+        url: http://example.com/integration/tests/  
+
+      - type: api-performance-tests
+        url: http://example.com/performance/tests/  
+
+
+      # Security
+      - type: api-security-tests
+        url: http://example.com/security/tests/  
+
+
+      # Monitors
+      - type: api-uptime-monitor
+        url: 'https://example.com/uptime/monitor'    
+
+      - type: api-contract-testing-monitor
+        url: 'https://example.com/contract-testing/monitor'          
+
+      - type: api-security-testing-monitor
+        url: 'https://example.com/security-testing/monitor'      
+
+      - type: api-performance-testing-region
+        url: 'https://example.com/performance/monitor/us-east-1/'  
+
+      - type: api-performance-testing-region
+        url: 'https://example.com/performance/monitor/us-west-1/'     
+
+
+      # Observability
+      - type: api-observability-reports
+        url: 'https://example.com/observability/reports/'                         
+
+      - type: api-observability-apm
+        url: 'https://example.com/observability/apm/'  
+
+      - type: api-observability-aws-gateway-log
+        url: 'https://uab3sjk0mna.execute-api.us-east-1.amazonaws.com/usage'  
+
+      - type: api-observability-dashboard
+        url: 'https://example.com/observability/dashboard/'  
+
+
+      # Distribution
+      - type: api-developer-portal
+        url: 'https://developer.example.com'   
+
+      - type: postman-network
+        url: 'https://explore.postman.com'   
+
+
+      # Feedback Loop
+      - type: issues
+        url: 'https://github.com/apis-json/apis-io-api/issues' 
+
+      - type: email
+        url: 'info@example.com'
+
+
+      # Legal
+      - type: api-terms-of-service
+        url: 'https://example.com/terms-of-service/' 
+
+      - type: api-license
+        url: 'https://example.com/license/'     
+        
+      - type: api-privacy-policy
+        url: 'https://example.com/privacy-policy/'            
+
+
+    # VCard Contact 
+    contact:
+
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+
+
+# Links to other related APIs.json
+include:
+
+  - name: PRoduct APIs.json
+    url: http://example.com/apis.json
+
+  - name: Consumer APIs.json
+    url: http://example.com/apis.json    
+
+
+# Who is maintaining this APIs.json
+maintainers:
+
+  - FN: Kin Lane
+    email: info@apievangelist.com
+    X-github: kinlane

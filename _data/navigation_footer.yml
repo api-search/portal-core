@@ -1,0 +1,22 @@
+# Footer navigation links
+
+- title: APIs.yaml
+  url: /apis-consumer.yml
+
+- title: Change Log
+  url: /change-log
+
+- title: Road Map
+  url: /road-map
+
+- title: Terms of Services
+  url: /terms-of-service
+
+- title: Licensing
+  url: /licensing
+
+- title: Privacy Policy
+  url: /privacy-policy
+
+- title: Sitemap.xml
+  url: /sitemap.xml

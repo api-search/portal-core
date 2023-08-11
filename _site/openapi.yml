@@ -1,0 +1,1440 @@
+openapi: 3.0.0
+
+info:
+
+  title: 'APIs.io API'
+  description: 'This is the public version of the APis.io API search engine, providing search, submission, and engine capabilities.'
+  version: V1
+
+  contact:
+    name: Kin Lane
+    email: info@apievangelist.com
+
+servers:
+  - url: https://dqkupdnj9l.execute-api.us-east-1.amazonaws.com/staging    
+
+tags:
+
+  - name: Search
+    description: Search using the engine.
+  - name: Tags
+    description: The tags for the engine.       
+  - name: Properties
+    description: The properties for the engine.
+  - name: Maintainers
+    description: The maintainers for the engine.
+  - name: Rules
+    description: The rules for the engine.   
+  - name: Engine
+    description: The engine for search.     
+  - name: Publish
+    description: The publishing for the engine.        
+    
+paths:
+
+  /search/apis:
+
+    get:
+      operationId: searchAPIs
+      summary: Search APIs
+      description: 'Searching across all APIs by keyword, property type, or maintainer.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: type
+          description: 'Type to search by.'        
+          in: query
+          required: false
+          schema:
+            type: string  
+        - name: maintainer
+          description: 'Maintainer to search by.'        
+          in: query
+          required: false
+          schema:
+            type: string                        
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Search
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"
+        
+    post:
+      summary: Submit API
+      description: 'Submit an API to be included in the index.'
+      operationId: addAPI
+      tags:
+        - Search
+      requestBody:
+        $ref: "#/components/requestBodies/APIsJSON"
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/APIsJSON"
+      security:
+        - api_key: []                
+                
+  /search/maintainers:
+
+    get:
+      operationId: searchMaintainers
+      summary: Search Maintainers
+      description: 'Search across all maintainers.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Search
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search" 
+                
+  /search/properties:
+
+    get:
+      operationId: searchProperties
+      summary: Search Properties
+      description: 'Search across all properties.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'        
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Search
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"  
+                
+  /search/tags:
+
+    get:
+      operationId: searchTags
+      summary: Search Tags
+      description: 'Search across all tags.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'        
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Search
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"                     
+                
+  /engine/latest:
+
+    put:
+      operationId: processesLatestAPIsJSON
+      summary: 'Process Latest APIs.json'
+      description: 'Pulls the latest APIs.json which have not been pulled within the last week.'
+      tags:
+        - Engine
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Latest"
+                
+  /engine/latest/rules:
+
+    put:
+      operationId: runRulesAgainstAPIsJSON
+      summary: 'Runs Rules Against APIs.json'
+      description: 'Runs all the rules against an APIs.json file.'
+      tags:
+        - Engine
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LatestRules"                  
+
+  /engine/apis/properties/latest:
+
+    put:
+      operationId: processesLatestAPIProperties
+      summary: 'Process Latest APIs Properties'
+      description: 'Pulls the latest API properties that has not been pulled within the last week.'
+      tags:
+        - Engine 
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LatestProperties"
+
+  /engine/apis/properties/latest/rules:
+
+    put:
+      operationId: runRulesAgainstAPIsProperties
+      summary: 'Runs Rules Against API Properties'
+      description: 'Runs all the rules against an API properties that haven not been run in last week.'
+      tags:
+        - Engine
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LatestPropertiesRules" 
+                
+  /engine/apis/properties:
+
+    put:
+      operationId: updateAPIProperties
+      summary: 'Update API Properties'
+      description: 'Updates the master list of API properties.'
+      tags:
+        - Engine 
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UpdateProperties"   
+                
+  /engine/apis/tags:
+
+    put:
+      operationId: updateAPITags
+      summary: 'Update API Tags'
+      description: 'Updates the master list of API tags.'
+      tags:
+        - Engine 
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UpdateTags"  
+                
+  /engine/apis/maintainers:
+
+    put:
+      operationId: updateAPIMaintainers
+      summary: 'Update API Maintainers'
+      description: 'Updates the master list of API maintainers.'
+      tags:
+        - Engine 
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UpdateMaintainers"                   
+              
+
+  /publish/apis:
+
+    put:
+      operationId: publishAPIs
+      summary: 'Publish Latest APIs'
+      description: 'Publish all APIs to a target destination.'
+      tags:
+        - Publish
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PublishAPIs"  
+                
+  /publish/maintainers:
+
+    put:
+      operationId: publishMaintainers
+      summary: 'Publish Maintainers'
+      description: 'Publish all maintainers to a target destination.'
+      tags:
+        - Publish
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PublishMaintainers"  
+                
+  /publish/tags:
+
+    put:
+      operationId: publishTags
+      summary: 'Publish Tags'
+      description: 'Publish all tags to a target destination.'
+      tags:
+        - Publish
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PublishTags"                     
+                
+  /properties:
+
+    get:
+      operationId: getProperties
+      summary: Search All Properties
+      description: 'Search across all API properties in use.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Properties
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"    
+
+    post:
+      summary: Submit Properties
+      description: 'Submit a property that will be used in index.'
+      operationId: submitProperty
+      tags:
+        - Properties
+      requestBody:
+        $ref: "#/components/requestBodies/API"
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Property"
+      security:
+        - api_key: []  
+        
+  "/properties/{property_id}":
+    
+    get:
+      summary: Get Property
+      description: 'Get individual Property.'
+      operationId: getProperty
+      tags:
+        - Properties    
+      parameters:
+        - name: property_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Property"
+    
+    put:
+      summary: Get Property
+      description: 'Get individual Property.'
+      operationId: updateProperty
+      tags:
+        - Properties      
+      parameters:
+        - name: property_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/Property"
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []
+    
+    delete:
+      summary: Delete Property
+      description: 'Delete individual Property.'
+      operationId: deleteProperty
+      tags:
+        - Properties      
+      parameters:
+        - name: property_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []        
+                
+  /tags:
+
+    get:
+      operationId: getTags
+      summary: Search All Tags
+      description: 'Search across all API tags in use.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Tags
+
+      responses:
+        "200":
+          description: Success
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"   
+                
+    post:
+      summary: Submit Tag
+      description: 'Submit a tag that will be used in index.'
+      operationId: submitTag
+      tags:
+        - Tags
+      requestBody:
+        $ref: "#/components/requestBodies/Tag"
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tag"
+      security:
+        - api_key: []  
+        
+  "/tags/{tag_id}":
+    
+    get:
+      summary: Get Tag
+      description: 'Get individual Tag.'
+      operationId: getTag
+      tags:
+        - Tags    
+      parameters:
+        - name: tag_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tag"
+    
+    put:
+      summary: Get Tag
+      description: 'Get individual Tag.'
+      operationId: updateTag
+      tags:
+        - Tags      
+      parameters:
+        - name: tag_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/Tag"
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []
+    
+    delete:
+      summary: Delete Tag
+      description: 'Delete individual Tag.'
+      operationId: deleteTag
+      tags:
+        - Tags      
+      parameters:
+        - name: tag_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []        
+
+  /maintainers:
+
+    get:
+      operationId: getMaintainers
+      summary: All Maintainers
+      description: 'Pull all maintainers in use across APIs.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Maintainers
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search" 
+
+    post:
+      summary: Submit Maintainer
+      description: 'Submit a maintainer that will be used in index.'
+      operationId: submitMaintainer
+      tags:
+        - Maintainers
+      requestBody:
+        $ref: "#/components/requestBodies/Maintainer"
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Maintainer"
+      security:
+        - api_key: []     
+        
+  "/maintainers/{maintainer_id}":
+    
+    get:
+      summary: Get Maintainer
+      description: 'Get individual Maintainer.'
+      operationId: getMaintainer
+      tags:
+        - Maintainers    
+      parameters:
+        - name: maintainer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Maintainer"
+    
+    put:
+      summary: Get Maintainer
+      description: 'Get individual Maintainer.'
+      operationId: updateMaintainer
+      tags:
+        - Maintainers      
+      parameters:
+        - name: maintainer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/Maintainer"
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []
+    
+    delete:
+      summary: Delete Maintainer
+      description: 'Delete individual Maintainer.'
+      operationId: deleteMaintainer
+      tags:
+        - Maintainers      
+      parameters:
+        - name: maintainer_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: 204 response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+      security:
+        - api_key: []        
+                
+  /rules:
+
+    get:
+      operationId: getRules
+      summary: All Rules
+      description: 'Get all of the rules being applied across APIs.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Rules
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"                    
+
+    post:
+      summary: Submit Rule
+      description: 'Submit a rule that will be used in index.'
+      operationId: submitRule
+      tags:
+        - Rules
+      requestBody:
+        $ref: "#/components/requestBodies/Rule"
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Rule"
+      security:
+        - api_key: []  
+        
+  "/rules/{rule_id}":
+    
+    get:
+      summary: Get Rule
+      description: 'Get individual Rule.'
+      operationId: getRule
+      tags:
+        - Rules    
+      parameters:
+        - name: rule_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Rule"
+    
+    put:
+      summary: Get Rule
+      description: 'Get individual Rule.'
+      operationId: updateRule
+      tags:
+        - Rules      
+      parameters:
+        - name: rule_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/Rule"
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []
+    
+    delete:
+      summary: Delete Rule
+      description: 'Delete individual Rule.'
+      operationId: deleteRule
+      tags:
+        - Rules      
+      parameters:
+        - name: rule_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: 204 response
+      security:
+        - api_key: []        
+
+components:
+
+  requestBodies:
+
+    APIsJSON:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/APIsJSON"
+      required: true
+
+    API:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Property:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Tag:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Maintainer:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Rule:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true                        
+  
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+  
+  schemas:
+
+    Search:
+      type: object
+      description: 'An JSON API object with metadata, data, and links.'
+      properties:
+        meta:
+          type: object
+          properties:
+            search:
+              type: string
+            type:
+              type: string    
+            limit:
+              type: integer 
+            page:
+              type: integer    
+            totalPages:
+              type: integer                                                 
+          required:
+           - totalPages
+           - page
+           - limit
+        data:
+          type: array
+          items:
+              anyOf:
+                - $ref: '#/components/schemas/API'
+                - $ref: '#/components/schemas/Property'
+                - $ref: '#/components/schemas/Maintainer'
+                - $ref: '#/components/schemas/Tag'
+          description: 'Listing of APIs in the JSON API format.'
+        links:
+          type: object
+          properties:
+            self:
+              type: string
+            first:
+              type: string
+            prev:
+              type: string
+            next:
+              type: string
+            last:
+              type: string
+          required:
+          - self
+      required:
+      - meta
+      - data
+      - links
+
+    APIsJSON:
+      type: object
+      required:
+      - name
+      - description
+      - url
+      
+      properties:
+      
+        name:
+          type: string
+          description: The name of the service described
+          minLength: 5
+
+        description:
+          type: string
+          description: Description of the service
+          minLength: 5
+
+        url:
+          type: string
+          description: URL where the apis.json file will live
+          pattern: "^(http)|(https)://(.*)$"
+
+        image:
+          type: string
+          description: Image to represent the API
+
+        created:
+          type: string
+          format: date
+          description: Date when the file was created
+
+        modified:
+          type: string
+          format: date
+          description: Date when the file was modified
+
+        specificationVersion:
+          type: string
+          description: APIs.json spec version, latest is 0.14
+
+        apis:
+          type: array
+          items:
+            "$ref": "#/components/schemas/API"
+          description: All the APIs of this service
+
+        maintainers:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Maintainer"
+          description: Maintainers of the apis.json file
+
+        tags:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Tag"
+          description: Tags to describe the service
+
+        include:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Include"
+          description: Links to other apis.json definitions included in this service.
+
+    API:
+      description: The description of the API
+      required:
+        - name
+        - description
+        - image
+        - baseURL
+        - humanURL
+        - properties
+        - contact
+      properties:
+        name:
+          type: string
+          description: name
+          minLength: 5
+        description:
+          type: string
+          description: description of the API
+          minLength: 5
+        image:
+          type: string
+          description: URL of an image representing the API
+        baseURL:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+          description: baseURL
+        humanURL:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+          description: humanURL
+        tags:
+          type: array
+          items:
+            type: string
+            minLength: 1
+          description: tags to describe the API
+        properties:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Property"
+          description: URLs
+        contact:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Contact"
+          description: Contact to reach if questions about API
+        meta:
+          type: array
+          items:
+            "$ref": "#/components/schemas/metaInformation"
+
+    Maintainer:
+      description: The person or organization responsible for maintaining the API.
+      required:
+      - name
+      properties:
+        name:
+          type: string
+          description: name
+          minLength: 5
+      additionalProperties:
+        type: string
+
+    metaInformation:
+      description: Metadata about the API
+      required:
+      - key
+      - value
+      properties:
+        key:
+          type: string
+        value:
+          type: string
+
+    Contact:
+      description: Information on contacting the API support
+      required:
+        - FN
+      properties:
+        FN:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          format: email
+        organizationName:
+          type: string
+          minLength: 1
+        adr:
+          type: string
+        tel:
+          type: string
+          minLength: 1
+        X-github:
+          type: string
+        photo:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+        vCard:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+        url:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+
+    Property:
+      description: A representation of a URL
+      required:
+      - type
+      - url
+      properties:
+        type:
+          type: string
+          pattern: "^(Swagger)$|^(RAML)$|^(Blueprint)$|^(WADL)$|^(WSDL)$|^(TermsOfService)$|^(InterfaceLicense)$|^(StatusPage)$|^(Pricing)$|^(Forums)$|^(AlertsTwitterHandle)$|^(X-[A-Za-z0-9\\-]*)$"
+        url:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+
+    Tag:
+      description: A consistent set of tag to apply to a description
+
+    Include:
+      description: Include other APIs.json file
+      required:
+      - name
+      - url
+      properties:
+        name:
+          type: string
+          minLength: 1
+        url:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+
+    Latest:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    LatestRules:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    LatestProperties:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    LatestPropertiesRules:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string       
+
+    UpdateProperties:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    UpdateTags:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string  
+
+    UpdateMaintainers:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string       
+
+    PublishAPIs:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string 
+
+    PublishProperties:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    PublishTags:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string  
+
+    PublishMaintainers:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string                                                                                   
+
+    Then:
+      type: object
+      items:
+        $ref: "#/components/schemas/PathExpression"
+
+    Rule:
+      type: object
+      properties:
+        description:
+          type: string
+        documentationUrl:
+          type: string
+          format: url
+        recommended:
+          type: boolean
+        given:
+          $ref: "#/components/schemas/Given"
+        resolved:
+          type: boolean
+        severity:
+          $ref: "#/components/schemas/Severity"
+        message:
+          type: string
+        tags:
+          items:
+            type: string
+          type: array
+        formats:
+          $ref: "#/components/schemas/Formats"
+        then:
+          type: array
+          items:
+            $ref: "#/components/schemas/Then"
+        type:
+          enum:
+          - style
+          - validation
+          type: string
+        extensions:
+          type: object
+      required:
+        - given
+        - then
+
+    Formats:
+      type: array
+      items:
+        $ref: "#/components/schemas/Format"
+
+    Format:
+      type: string
+
+    DiagnosticSeverity:
+      enum:
+        - -1
+        - 0
+        - 1
+        - 2
+        - 3
+
+    HumanReadableSeverity:
+      enum:
+      - error
+      - warn
+      - info
+      - hint
+      - off
+
+    Severity:
+      type: object
+      oneOf:
+        - $ref: "#/components/schemas/DiagnosticSeverity"
+        - $ref: "#/components/schemas/HumanReadableSeverity"
+
+    Given:
+      type: array
+      items:
+        "$ref": "#/components/schemas/PathExpression"
+      minItems: 1
+
+    PathExpression:
+      type: string
+      pattern: "^\\$"

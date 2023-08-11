@@ -1,0 +1,34 @@
+left:
+
+  - title: Home
+    url: /
+
+  - title: About
+    url: /about
+
+  - title: Getting Started
+    url: /getting-started     
+
+  - title: Authentication
+    url: /authentication   
+
+  - title: Documentation
+    url: /documentation
+
+  - title: Plans
+    url: /plans
+
+  - title: SDKs
+    url: /sdks 
+
+  - title: Blog
+    url: /blog
+
+  - title: Videos
+    url: /videos
+
+  - title: Support
+    url: /support
+
+right:
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    {% if page.hero %}
+        {% include hero.html %}
+    {% else %}
+        {% include navbar.html %}
+    {% endif %}
+
+    <style>
+        ul{
+            padding: 10px 25px 25px 25px;
+            margin: 10px 25px 25px 25px;
+        }
+    </style>
+
+    {{ content }}
+
+    {% include offcanvas-docs.html %}
+
+    {% include offcanvas.html %}
+
+    {% if page.layout != 'doc' %}
+        {% include footer.html %}
+    {% endif %}
+
+    {% if page.layout == 'doc' %}
+        {% include hook-pre-closing-body-doc.html %}
+    {% endif %}
+
+    {% include hook-pre-closing-body.html %}
+
+    <script src="/assets/swagger/swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="/assets/swagger/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="/assets/swagger/swagger-initializer.js" charset="UTF-8"> </script>    
+    </body>
+
+</html>
