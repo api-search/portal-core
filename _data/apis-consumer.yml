@@ -1,0 +1,241 @@
+---
+specificationVersion: "0.16"
+specificationType: Consumer
+name: APIs.io
+description: This is the API to access APIs.io API search engine data.
+image: http://apis.io/logo_square.png
+tags:
+  - APIs
+  - Search Engine
+  - Directory
+created: 2023-07-26
+modified: 2023-08-05
+maturity: Active
+access: Public
+url: http://apis.io/apis-index.yml
+apis:
+  - name: Search API
+    description: Search for APIs by keyword, maintainer, properties, and tags.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-search-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - APIs
+      - Search Engine
+      - Directory
+    properties:
+      - type: documentation
+        url: https://apis-io-search-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-search-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Engine API
+    description: Then engine behind the Search API, fetching APIs.json metadata about APis.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-engine-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Engine
+      - APIs.json
+      - Harvester
+    properties:
+      - type: documentation
+        url: https://apis-io-engine-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Ratings API
+    description: Then ratings layer powering the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-ratings-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Ratings
+      - Quality
+      - Maturity
+      - Scores
+    properties:
+      - type: documentation
+        url: https://apis-io-ratings-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-ratings-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Linting API
+    description: Then linting API behind the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-linting-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Linting
+      - Spectral
+      - Rules
+    properties:
+      - type: documentation
+        url: https://apis-io-linting-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-linting-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Maintainers API
+    description: Then maintainers API for the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-maintainers-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Maintainers
+    properties:
+      - type: documentation
+        url: https://apis-io-maintainers-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-maintainers-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Properties API
+    description: Then properties API for the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-properties-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Properties
+    properties:
+      - type: documentation
+        url: https://apis-io-properties-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-properties-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Rules API
+    description: The rules being applied to APIs in the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-rules-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Rules
+    properties:
+      - type: documentation
+        url: https://apis-io-rules-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-rules-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Tags API
+    description: Then tags used to organize APIs in the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-tags-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Tags
+    properties:
+      - type: documentation
+        url: https://apis-io-tags-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-tags-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+  - name: Publishing API
+    description: Then publishing API for the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-publishing-api.apievangelist.com
+    baseURL: http://apis.io/api/
+    tags:
+      - Publishing
+    properties:
+      - type: documentation
+        url: https://apis-io-publishing-api.apievangelist.com
+      - type: postman-collection
+        url: https://www.postman.com
+      - type: openapi
+        url: https://apis-io-publishing-api.apievangelist.com/openapi.yml
+    contact:
+      - FN: Kin Lane
+        email: info@apievangelist.com
+        X-github: kinlane
+properties:
+  - type: documentation
+    url: http://example.com/regions/
+  - type: postman-collection
+    url: https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-7d657926-0fe2-4527-b475-93ca3e0e68b2
+  - type: openapi
+    url: openapi.yml
+  - type: postman-public-workspace
+    url: https://www.postman.com/api-evangelist/workspace/apis-io/overview
+  - type: github-repository
+    url: https://github.com/apis-json/apis-io-api/issues
+  - type: api-getting-started
+    url: https://example.com/getting-started/
+  - type: api-plans
+    url: https://example.com/plans/
+  - type: api-authentication
+    url: http://example.com/authentication/
+  - type: api-road-map
+    url: https://github.com/apis-json/apis-io-api/blob/main/road-map.md
+  - type: api-change-log
+    url: https://github.com/apis-json/apis-io-api/blob/main/change-log.md
+  - type: api-environment-sandbox
+    url: http://example.com/environment/sandbox/
+  - type: api-environment-prduction
+    url: http://example.com/environment/production/
+  - type: api-sdk-python
+    url: http://example.com/sdk/python/
+  - type: api-sdk-go
+    url: http://example.com/sdk/go/
+  - type: api-sdk-node
+    url: http://example.com/sdk/node/
+  - type: api-uptime-monitor
+    url: https://example.com/uptime/monitor
+  - type: blog
+    url: https://example.com/blog/
+  - type: videos
+    url: https://example.com/videos/
+  - type: support
+    url: https://example.com/support/
+  - type: issues
+    url: https://github.com/apis-json/apis-io-api/issues
+  - type: email
+    url: info@example.com
+  - type: api-terms-of-service
+    url: https://example.com/terms-of-service/
+  - type: api-license
+    url: https://example.com/license/
+  - type: api-privacy-policy
+    url: https://example.com/privacy-policy/
+include: []
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
+    X-github: kinlane
