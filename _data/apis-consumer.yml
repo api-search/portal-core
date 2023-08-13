@@ -1,6 +1,5 @@
 ---
 specificationVersion: "0.16"
-specificationType: Consumer
 name: APIs.io
 description: This is the API to access APIs.io API search engine data.
 image: http://apis.io/logo_square.png
@@ -10,8 +9,6 @@ tags:
   - Directory
 created: 2023-07-26
 modified: 2023-08-05
-maturity: Active
-access: Public
 url: http://apis.io/apis-index.yml
 apis:
   - name: Search API
