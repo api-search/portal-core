@@ -11,7 +11,7 @@ created: '2023-07-26'
 modified: '2023-08-13'
 url: http://apis.io/apis-index.yml
 apis:
-  - name: Search API
+  - name: APIs.io Search API
     description: Search for APIs by keyword, maintainer, properties, and tags.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-search-api.apievangelist.com
@@ -31,7 +31,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Engine API
+  - name: APIs.io Engine API
     description: Then engine behind the Search API, fetching APIs.json metadata about APis.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-engine-api.apievangelist.com
@@ -51,7 +51,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Ratings API
+  - name: APIs.io Ratings API
     description: Then ratings layer powering the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-ratings-api.apievangelist.com
@@ -72,7 +72,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Linting API
+  - name: APIs.io Linting API
     description: Then linting API behind the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-linting-api.apievangelist.com
@@ -92,7 +92,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Maintainers API
+  - name: APIs.io Maintainers API
     description: Then maintainers API for the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-maintainers-api.apievangelist.com
@@ -110,7 +110,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Properties API
+  - name: APIs.io Properties API
     description: Then properties API for the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-properties-api.apievangelist.com
@@ -128,7 +128,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Rules API
+  - name: APIs.io Rules API
     description: The rules being applied to APIs in the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-rules-api.apievangelist.com
@@ -146,7 +146,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Tags API
+  - name: APIs.io Tags API
     description: Then tags used to organize APIs in the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-tags-api.apievangelist.com
@@ -164,7 +164,7 @@ apis:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-  - name: Publishing API
+  - name: APIs.io Publishing API
     description: Then publishing API for the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-publishing-api.apievangelist.com
