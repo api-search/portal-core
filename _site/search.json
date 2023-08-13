@@ -1,31 +1,10 @@
 [
   
     {
-      "title"    : "Sample Blog Post About APIs.io",
+      "title"    : "An APIs.io Prototype",
       "tags"     : "API, Search",
-      "url"      : "/2023/07/25/blog-post-two/",
-      "date"     : "2023-07-25 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "Sample Blog Post About APIs.io",
-      "tags"     : "API, Search",
-      "url"      : "/2023/07/25/blog-post-three/",
-      "date"     : "2023-07-25 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "Sample Blog Post About APIs.io",
-      "tags"     : "API, Search",
-      "url"      : "/2023/07/25/blog-post-one/",
-      "date"     : "2023-07-25 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "Sample Blog Post About APIs.io",
-      "tags"     : "API, Search",
-      "url"      : "/2023/07/25/blog-post-four/",
-      "date"     : "2023-07-25 00:00:00 -0400"
+      "url"      : "/2023/08/13/apis-io-prototype/",
+      "date"     : "2023-08-13 00:00:00 -0400"
     } 
   
 ]

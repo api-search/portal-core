@@ -3,54 +3,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/2023/07/25/blog-post-two/</loc>
+      <loc>http://localhost:4000/2023/08/13/apis-io-prototype/</loc>
       
-        <lastmod>2023-07-25T00:00:00-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/2023/07/25/blog-post-three/</loc>
-      
-        <lastmod>2023-07-25T00:00:00-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/2023/07/25/blog-post-one/</loc>
-      
-        <lastmod>2023-07-25T00:00:00-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/2023/07/25/blog-post-four/</loc>
-      
-        <lastmod>2023-07-25T00:00:00-04:00</lastmod>
+        <lastmod>2023-08-13T00:00:00-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -66,7 +21,7 @@
     <url>
       <loc>http://localhost:4000/404.html</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -81,7 +36,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,7 +51,7 @@
     <url>
       <loc>http://localhost:4000/apis.json</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -111,7 +66,7 @@
     <url>
       <loc>http://localhost:4000/atom.xml</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -126,7 +81,7 @@
     <url>
       <loc>http://localhost:4000/authentication/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -141,7 +96,7 @@
     <url>
       <loc>http://localhost:4000/change-log/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -156,7 +111,7 @@
     <url>
       <loc>http://localhost:4000/documentation/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -171,7 +126,7 @@
     <url>
       <loc>http://localhost:4000/getting-started/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -186,7 +141,7 @@
     <url>
       <loc>http://localhost:4000/blog/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -201,7 +156,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -216,7 +171,7 @@
     <url>
       <loc>http://localhost:4000/licensing/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -231,7 +186,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/main.css</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -246,7 +201,7 @@
     <url>
       <loc>http://localhost:4000/plans/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -261,7 +216,7 @@
     <url>
       <loc>http://localhost:4000/privacy-policy/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -276,7 +231,7 @@
     <url>
       <loc>http://localhost:4000/road-map/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -291,7 +246,7 @@
     <url>
       <loc>http://localhost:4000/rules-consumer.yml</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +261,7 @@
     <url>
       <loc>http://localhost:4000/sdks/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -321,7 +276,7 @@
     <url>
       <loc>http://localhost:4000/search.json</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -338,7 +293,7 @@
     <url>
       <loc>http://localhost:4000/support/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -353,7 +308,7 @@
     <url>
       <loc>http://localhost:4000/terms-of-service/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -368,7 +323,7 @@
     <url>
       <loc>http://localhost:4000/videos/</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -383,7 +338,7 @@
     <url>
       <loc>http://localhost:4000/assets/css/style.css</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -398,7 +353,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2023-08-13T09:37:22-04:00</lastmod>
+        <lastmod>2023-08-13T19:22:54-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
