@@ -21,11 +21,11 @@ apis:
       - Search Engine
       - Directory
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-search-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-search-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -41,11 +41,11 @@ apis:
       - APIs.json
       - Harvester
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-engine-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-engine-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -62,11 +62,11 @@ apis:
       - Maturity
       - Scores
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-ratings-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-ratings-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -82,11 +82,11 @@ apis:
       - Spectral
       - Rules
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-linting-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-linting-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -100,11 +100,11 @@ apis:
     tags:
       - Maintainers
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-maintainers-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-maintainers-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -118,11 +118,11 @@ apis:
     tags:
       - Properties
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-properties-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-properties-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -136,11 +136,11 @@ apis:
     tags:
       - Rules
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-rules-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-rules-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -154,11 +154,11 @@ apis:
     tags:
       - Tags
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-tags-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-tags-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
@@ -172,17 +172,17 @@ apis:
     tags:
       - Publishing
     properties:
-      - type: documentation
+      - type: x-documentation
         url: https://apis-io-publishing-api.apievangelist.com
-      - type: postman-collection
+      - type: x-postman-collection
         url: https://www.postman.com
-      - type: openapi
+      - type: x-openapi
         url: https://apis-io-publishing-api.apievangelist.com/openapi.yml
     contact:
       - FN: Kin Lane
         email: info@apievangelist.com
         X-github: kinlane
-properties:
+x-properties:
   - type: documentation
     url: http://example.com/regions/
   - type: postman-collection
