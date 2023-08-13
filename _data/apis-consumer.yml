@@ -1,5 +1,5 @@
 ---
-specificationVersion: "0.16"
+specificationVersion: "0.14"
 name: APIs.io
 description: This is the API to access APIs.io API search engine data.
 image: http://apis.io/logo_square.png
@@ -7,8 +7,8 @@ tags:
   - APIs
   - Search Engine
   - Directory
-created: 2023-07-26
-modified: 2023-08-05
+created: '2023-07-26'
+modified: '2023-08-05'
 url: http://apis.io/apis-index.yml
 apis:
   - name: Search API
