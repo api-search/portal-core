@@ -1,7 +1,7 @@
 # Footer navigation links
 
-- title: APIs.yaml
-  url: /apis-consumer.yml
+- title: APIs.json
+  url: /apis.json
 
 - title: Change Log
   url: /change-log
