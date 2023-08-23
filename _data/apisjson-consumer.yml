@@ -69,8 +69,8 @@ apis:
 
   - name: APIs.io Linter API
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
-    image: https://apis-io-linter-api.apievangelist.com/
-    humanURL: http://apis.io/api
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-linter-api.apievangelist.com/
     baseURL: http://apis.io/api/
 
     # Design
