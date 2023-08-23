@@ -1,0 +1,518 @@
+# APIs JSON/YAML Specification Details
+specificationVersion: '0.15'
+specificationType: 'Consumer'
+
+# Overview of this API
+name: APIs.io
+description: This is the API to access APIs.io API search engine data.
+image: http://apis.io/logo_square.png
+
+# Tags for helping organize
+tags:
+
+  - APIs
+  - Search Engine
+  - Directory
+
+# Time frame for API evolution
+created: '2023-07-26'
+modified: '2023-08-22'  
+
+url: http://apis.io/apis-index.yml
+
+apis:
+ 
+  - name: APIs.io Engine API
+    description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-engine-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Engine
+      - Harvest
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-engine-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com      
+
+  - name: APIs.io Linter API
+    description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
+    image: https://apis-io-linter-api.apievangelist.com/
+    humanURL: http://apis.io/api
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Linter
+      - Spectral
+      - Rules
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-linter-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-linter-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com
+
+  - name: APIs.io Maintainers API
+    description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-maintainers-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Maintainers
+      - Companies
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-maintainers-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-maintainers-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com      
+
+  - name: APIs.io Properties API
+    description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-properties-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Properties
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-properties-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-properties-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com
+
+  - name: APIs.io Publishing API
+    description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-publishing-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Publishing
+      - Directory
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-publishing-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-publishing-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com  
+
+  - name: APIs.io Ratings API
+    description: This is the ratings engine for the APIs.io API search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-ratings-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Rating
+      - Ranking
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-ratings-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-ratings-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com 
+
+  - name: APIs.io Rules API
+    description: This is the API for managing rules that are used to govern the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-rules-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Rules
+      - Spectral
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-rules-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-rules-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com
+
+  - name: APIs.io Search API
+    description: This is the API behind the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-search-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Search Engine
+      - Directory
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-search-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-search-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com                  
+
+  - name: APIs.io Tags API
+    description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-tags-api.apievangelist.com/
+    baseURL: http://apis.io/api/
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Tags
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-tags-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-tags-api.apievangelist.com/openapi.yml 
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com
+
+properties:
+
+  # Workspaces
+  - type: postman-public-workspace
+    url: https://www.postman.com/api-evangelist/workspace/apis-io/overview        
+
+  - type: github-repository
+    url: 'https://github.com/apis-json/apis-io-api/issues' 
+
+
+  # Management
+  - type: api-getting-started
+    url: 'https://example.com/getting-started/'  
+
+  - type: api-plans
+    url: 'https://example.com/plans/'         
+
+  - type: api-authentication
+    url: http://example.com/authentication/             
+
+
+  # Change
+  - type: api-road-map
+    url: https://github.com/apis-json/apis-io-api/blob/main/road-map.md
+
+  - type: api-change-log
+    url: https://github.com/apis-json/apis-io-api/blob/main/change-log.md 
+
+
+  # Environments
+  - type: api-environment-sandbox
+    url: http://example.com/environment/sandbox/  
+
+  - type: api-environment-prduction
+    url: http://example.com/environment/production/                                                                                                         
+
+
+  # SDKs
+  - type: api-sdk-python
+    url: http://example.com/sdk/python/                        
+
+  - type: api-sdk-go
+    url: http://example.com/sdk/go/
+
+  - type: api-sdk-node
+    url: http://example.com/sdk/node/       
+
+  # Monitors
+  - type: api-uptime-monitor
+    url: 'https://example.com/uptime/monitor'   
+
+  # Communication
+  - type: blog
+    url: 'https://example.com/blog/' 
+
+  - type: videos
+    url: 'https://example.com/videos/'   
+
+
+  # Support
+  - type: support
+    url: 'https://example.com/support/'  
+
+  - type: issues
+    url: 'https://github.com/apis-json/apis-io-api/issues' 
+
+  - type: email
+    url: 'info@example.com'
+
+
+  # Legal
+  - type: api-terms-of-service
+    url: 'https://example.com/terms-of-service/' 
+
+  - type: api-license
+    url: 'https://example.com/license/'     
+    
+  - type: api-privacy-policy
+    url: 'https://example.com/privacy-policy/'                                               
+
+# Links to other related APIs.json
+include: []  
+    
+
+# Who is maintaining this APIs.json
+maintainers:
+
+  - FN: API Evangelist
+    email: info@apievangelist.com
+    X-github: kinlane
