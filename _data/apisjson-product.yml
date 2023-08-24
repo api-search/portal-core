@@ -3,8 +3,8 @@ specificationVersion: '0.15'
 specificationType: 'Product'
 
 # Overview of this API
-name: APIs.io
-description: This is the API to access APIs.io API search engine data.
+name: APIs.io (Product)
+description: This is the API to access APIs.io API search engine, from the product management perspective.
 image: http://apis.io/logo_square.png
 
 # Tags for helping organize
@@ -18,14 +18,14 @@ tags:
 created: '2023-07-26'
 modified: '2023-08-22'  
 
-url: http://apis.io/apis-index.yml
+url: https://apis-io-api.apievangelist.com/apis-product.json
 
 apis:
- 
-  - name: APIs.io Engine API
-    description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
+
+  - name: APIs.io Search API
+    description: This is the API behind the APIs.io search engine.
     image: http://apis.io/logo_square.png
-    humanURL: https://apis-io-engine-api.apievangelist.com/
+    humanURL: https://apis-io-search-api.apievangelist.com/
     baseURL: http://apis.io/api/
 
     # Design
@@ -46,72 +46,26 @@ apis:
     tags:
     
       - APIs
-      - Engine
-      - Harvest
+      - Search Engine
+      - Directory
     
     properties:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-engine-api.apievangelist.com/
+        url: https://apis-io-search-api.apievangelist.com/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+        url: https://apis-io-search-api.apievangelist.com/openapi.yml 
 
     # VCard Contact 
     contact:
 
       - FN: API Evangelist
-        email: info@apievangelist.com      
-
-  - name: APIs.io Linter API
-    description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
-    image: https://apis-io-linter-api.apievangelist.com/
-    humanURL: http://apis.io/api
-    baseURL: http://apis.io/api/
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Linter
-      - Spectral
-      - Rules
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://apis-io-linter-api.apievangelist.com/
-
-      - type: postman-collection
-        url: https://www.postman.com/api-evangelist/workspace/
-
-      - type: openapi
-        url: https://apis-io-linter-api.apievangelist.com/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: API Evangelist
-        email: info@apievangelist.com
+        email: info@apievangelist.com  
 
   - name: APIs.io Maintainers API
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
@@ -335,52 +289,7 @@ apis:
     contact:
 
       - FN: API Evangelist
-        email: info@apievangelist.com
-
-  - name: APIs.io Search API
-    description: This is the API behind the APIs.io search engine.
-    image: http://apis.io/logo_square.png
-    humanURL: https://apis-io-search-api.apievangelist.com/
-    baseURL: http://apis.io/api/
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Search Engine
-      - Directory
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://apis-io-search-api.apievangelist.com/
-
-      - type: postman-collection
-        url: https://www.postman.com/api-evangelist/workspace/
-
-      - type: openapi
-        url: https://apis-io-search-api.apievangelist.com/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: API Evangelist
-        email: info@apievangelist.com                  
+        email: info@apievangelist.com                
 
   - name: APIs.io Tags API
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
@@ -430,142 +339,105 @@ properties:
 
   # Requirements
   - type: api-business-requirements
-    description: Provides the business requirement used to deliver an API.
-    url: http://example.com/business/requirements/   
+    description: Provides the business requirements for the APIs.io API.
+    url: https://github.com/api-search/developer-portal/blob/main/business-requirements.md
 
   - type: api-security-requirements
-    description: Provides the security requirement used to deliver an API.
-    url: http://example.com/security/requirements/           
+    description: Provides the security requirements for the APIs.io API.
+    url: https://github.com/api-search/developer-portal/blob/main/security-requirements.md           
 
   # Workspaces
-  - type: postman-public-workspace
-    url: https://www.postman.com/api-evangelist/workspace/apis-io/overview        
-
   - type: github-repository
-    url: 'https://github.com/apis-json/apis-io-api/issues' 
+    url: 'https://github.com/api-search/developer-portal' 
+
+  - type: postman-public-workspace
+    url: 'https://www.postman.com/api-evangelist/workspace/apis-io/overview' 
 
   # Rules
+
+  # Rules to lint the consumer APIs.json
   - type: consumer-rules
-    url: http://example.com/consumer/rules/ 
-  - type: product-rules
-    url: http://example.com/consumer/rules/   
-  - type: platform-rules
-    url: http://example.com/consumer/rules/                 
+    url: https://github.com/api-search/developer-portal/blob/main/rules/ruleset-apisjson-product.yml               
 
-  # Contracts
-  - type: OpenAPI
-    url: https://example.com/openapi.yml
+  # Rules to lint the consumer OpenAPIs for the APIs.
+  - type: openapi-rules
+    url: https://github.com/api-search/developer-portal/blob/main/rules/ruleset-openapi.yml  
 
 
-  # Environments
-  - type: api-environment-sandbox
-    url: http://example.com/environment/sandbox/  
-
-  - type: api-environment-prduction
-    url: http://example.com/environment/production/  
-
-  # Documentation
-  - type: documentation
-    url: http://example.com/regions/ 
-
-  - type: postman-collection
-    url: https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-7d657926-0fe2-4527-b475-93ca3e0e68b2           
-
-
-  # Management
+  # Onboarding
   - type: api-getting-started
-    url: 'https://example.com/getting-started/'  
+    url: 'https://apis-io-api.apievangelist.com/getting-started/'  
 
   - type: api-plans
-    url: 'https://example.com/plans/'         
+    url: 'https://apis-io-api.apievangelist.com/plans/'         
 
   - type: api-authentication
-    url: http://example.com/authentication/             
+    url: 'https://apis-io-api.apievangelist.com/authentication/'            
 
+  - type: postman-collection
+    url: 'https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-01bfd049-809d-49aa-be48-b8b41094f8cd'         
 
   # Change
   - type: api-road-map
-    url: https://github.com/apis-json/apis-io-api/blob/main/road-map.md
+    url: https://apis-io-api.apievangelist.com/road-map/
 
   - type: api-change-log
-    url: https://github.com/apis-json/apis-io-api/blob/main/change-log.md                              
+    url: https://apis-io-api.apievangelist.com/change-log/                             
 
-
-  # SDKs
-  - type: api-sdk-python
-    url: http://example.com/sdk/python/                        
-
-  - type: api-sdk-go
-    url: http://example.com/sdk/go/
-
-  - type: api-sdk-node
-    url: http://example.com/sdk/node/                       
-
+  # Code
+  - type: api-sdks
+    url: https://apis-io-api.apievangelist.com/sdks/                                          
 
   # Monitors
   - type: api-uptime-monitor
-    url: 'https://example.com/uptime/monitor'    
-
-  - type: api-contract-testing-monitor
-    url: 'https://example.com/contract-testing/monitor'          
-
-  - type: api-performance-testing-region
-    url: 'https://example.com/performance/monitor/us-east-1/'  
-
-  - type: api-performance-testing-region
-    url: 'https://example.com/performance/monitor/us-west-1/'     
-
-
-  # Observability
-  - type: api-observability-reports
-    url: 'https://example.com/observability/reports/'                         
-
-  - type: api-observability-dashboard
-    url: 'https://example.com/observability/dashboard/'  
+    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/monitor/Testing-Uptime---APIs-io-Search~1ee42164-0de2-4c80-b9a6-257e30c42c9e'    
 
 
   # Distribution
   - type: api-developer-portal
-    url: 'https://developer.example.com'   
+    url: 'https://apis-io-api.apievangelist.com/'   
 
   - type: postman-network
-    url: 'https://explore.postman.com'   
+    url: 'https://www.postman.com/api-evangelist'   
 
 
   # Communication
   - type: blog
-    url: 'https://example.com/blog/' 
+    url: 'https://apis-io-api.apievangelist.com/blog/' 
 
   - type: videos
-    url: 'https://example.com/videos/'   
+    url: 'https://apis-io-api.apievangelist.com/videos/'   
 
 
   # Feedback Loop
   - type: issues
-    url: 'https://github.com/apis-json/apis-io-api/issues' 
+    url: 'https://github.com/api-search/developer-portal/issues' 
 
   - type: email
-    url: 'info@example.com'
+    url: 'info@apievangelist.com'
 
 
   # Legal
   - type: api-terms-of-service
-    url: 'https://example.com/terms-of-service/' 
+    url: 'https://apis-io-api.apievangelist.com/terms-of-service/' 
 
   - type: api-license
-    url: 'https://example.com/license/'     
+    url: 'https://apis-io-api.apievangelist.com/licensing/'     
     
   - type: api-privacy-policy
-    url: 'https://example.com/privacy-policy/'            
+    url: 'https://apis-io-api.apievangelist.com/privacy-policy/'            
 
 # Links to other related APIs.json
 include:
 
-  - name: PRoduct APIs.json
-    url: http://example.com/apis.json
+  - name: Consummer APIs.io
+    url: https://apis-io-api.apievangelist.com/apis-consumer.json   
 
-  - name: Consumer APIs.json
-    url: http://example.com/apis.json    
+  - name: Engineering APIs.io
+    url: https://apis-io-api.apievangelist.com/apis-engineering.json
+
+  - name: Platform APIs.io
+    url: https://apis-io-api.apievangelist.com/apis-platform.json
     
 
 # Who is maintaining this APIs.json

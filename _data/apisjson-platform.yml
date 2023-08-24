@@ -3,8 +3,8 @@ specificationVersion: '0.15'
 specificationType: 'Platform'
 
 # Overview of this API
-name: APIs.io
-description: This is the API to access APIs.io API search engine data.
+name: APIs.io (Platform)
+description: This is the API to access APIs.io API search engine, from the perspective of internal platform team.
 image: http://apis.io/logo_square.png
 
 # Tags for helping organize
@@ -18,7 +18,7 @@ tags:
 created: '2023-07-26'
 modified: '2023-08-22'  
 
-url: http://apis.io/apis-index.yml
+url: https://apis-io-api.apievangelist.com/apis-platform.json
 
 apis:
  
@@ -53,13 +53,23 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-engine-api.apievangelist.com/
+        url: https://aengine-api.apievangelist.com/pis-io-
 
       - type: postman-collection
-        url: https://www.postman.com/api-evangelist/workspace/
+        url: https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/collection/35240-c0e38392-8588-4d8e-9584-f5633eeaf036
 
       - type: openapi
         url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/engine-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/engine-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'        
 
     # VCard Contact 
     contact:
@@ -107,6 +117,16 @@ apis:
       - type: openapi
         url: https://apis-io-linter-api.apievangelist.com/openapi.yml 
 
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/linter-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/linter-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
     # VCard Contact 
     contact:
 
@@ -152,6 +172,16 @@ apis:
       - type: openapi
         url: https://apis-io-maintainers-api.apievangelist.com/openapi.yml 
 
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/maintainers-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/maintainers-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
     # VCard Contact 
     contact:
 
@@ -195,6 +225,16 @@ apis:
 
       - type: openapi
         url: https://apis-io-properties-api.apievangelist.com/openapi.yml 
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/properties-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/properties-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
 
     # VCard Contact 
     contact:
@@ -241,6 +281,16 @@ apis:
       - type: openapi
         url: https://apis-io-publishing-api.apievangelist.com/openapi.yml 
 
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/publishing-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/publishing-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
     # VCard Contact 
     contact:
 
@@ -285,6 +335,16 @@ apis:
 
       - type: openapi
         url: https://apis-io-ratings-api.apievangelist.com/openapi.yml 
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/ragtings-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/ratings-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
 
     # VCard Contact 
     contact:
@@ -331,6 +391,16 @@ apis:
       - type: openapi
         url: https://apis-io-rules-api.apievangelist.com/openapi.yml 
 
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/rules-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/rules-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
     # VCard Contact 
     contact:
 
@@ -376,6 +446,16 @@ apis:
       - type: openapi
         url: https://apis-io-search-api.apievangelist.com/openapi.yml 
 
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/search-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/search-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
     # VCard Contact 
     contact:
 
@@ -420,6 +500,16 @@ apis:
       - type: openapi
         url: https://apis-io-tags-api.apievangelist.com/openapi.yml 
 
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/tags-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/tags-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
     # VCard Contact 
     contact:
 
@@ -430,177 +520,103 @@ properties:
 
   # Requirements
   - type: api-business-requirements
-    description: Provides the business requirement used to deliver an API.
-    url: http://example.com/business/requirements/   
+    description: Provides the business requirements for the APIs.io API.
+    url: https://github.com/api-search/developer-portal/blob/main/business-requirements.md
 
   - type: api-security-requirements
-    description: Provides the security requirement used to deliver an API.
-    url: http://example.com/security/requirements/           
-
+    description: Provides the security requirements for the APIs.io API.
+    url: https://github.com/api-search/developer-portal/blob/main/security-requirements.md           
 
   # Workspaces
-  - type: postman-public-workspace
-    url: https://www.postman.com/api-evangelist/workspace/apis-io/overview        
-
   - type: github-repository
-    url: 'https://github.com/apis-json/apis-io-api/issues' 
+    url: 'https://github.com/api-search/developer-portal' 
 
+  - type: postman-public-workspace
+    url: 'https://www.postman.com/api-evangelist/workspace/apis-io/overview' 
 
   # Rules
+
+  # Rules to lint the consumer APIs.json
   - type: consumer-rules
-    url: http://example.com/consumer/rules/ 
-  - type: product-rules
-    url: http://example.com/consumer/rules/   
+    url: https://github.com/api-search/developer-portal/blob/main/rules/ruleset-apisjson-consumer.yml   
+
+  # Rules to lint the consumer APIs.json
   - type: platform-rules
-    url: http://example.com/consumer/rules/                 
+    url: https://github.com/api-search/developer-portal/blob/main/rules/ruleset-apisjson-platform.yml   
 
+  # Rules to lint the consumer APIs.json
+  - type: engineering-rules
+    url: https://github.com/api-search/developer-portal/blob/main/rules/ruleset-apisjson-engineering.yml                       
 
-  # Contracts
-  - type: OpenAPI
-    url: https://example.com/openapi.yml
+  # Rules to lint the consumer OpenAPIs for the APIs.
+  - type: openapi-rules
+    url: https://github.com/api-search/developer-portal/blob/main/rules/ruleset-openapi.yml           
 
-
-  # Documentation
-  - type: documentation
-    url: http://example.com/regions/ 
-
-  - type: postman-collection
-    url: https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-7d657926-0fe2-4527-b475-93ca3e0e68b2           
-
-
-  # Deployment
-  - type: github-action
-    url: 'https://github.com/org/repo/actions'
-
-  - type: aws-api-gateway
-    url: 'https://uab3sjk0mna.execute-api.us-east-1.amazonaws.com'
-
-
-  # Management
+  # Onboarding
   - type: api-getting-started
-    url: 'https://example.com/getting-started/'  
+    url: 'https://apis-io-api.apievangelist.com/getting-started/'  
 
   - type: api-plans
-    url: 'https://console.aws.amazon.com/apigateway/home?#/usage-plans/'         
-
-  - type: api-keys
-    url: 'https://console.aws.amazon.com/apigateway/home?#/keys/'       
+    url: 'https://apis-io-api.apievangelist.com/plans/'         
 
   - type: api-authentication
-    url: http://example.com/authentication/             
+    url: 'https://apis-io-api.apievangelist.com/authentication/'            
 
-
-  # Environments
-  - type: api-environment-sandbox
-    url: http://example.com/environment/sandbox/  
-
-  - type: api-environment-staging
-    url: http://example.com/environment/staging/          
-
-  - type: api-environment-prduction
-    url: http://example.com/environment/production/  
-
+  - type: postman-collection
+    url: 'https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-01bfd049-809d-49aa-be48-b8b41094f8cd'         
 
   # Change
   - type: api-road-map
-    url: https://github.com/apis-json/apis-io-api/blob/main/road-map.md
+    url: https://apis-io-api.apievangelist.com/road-map/
 
   - type: api-change-log
-    url: https://github.com/apis-json/apis-io-api/blob/main/change-log.md                              
+    url: https://apis-io-api.apievangelist.com/change-log/                             
 
+  # Code
+  - type: api-sdks
+    url: https://apis-io-api.apievangelist.com/sdks/                                          
 
-  # SDKs
-  - type: api-sdk-python
-    url: http://example.com/sdk/python/                        
-
-  - type: api-sdk-go
-    url: http://example.com/sdk/go/
-
-  - type: api-sdk-node
-    url: http://example.com/sdk/node/       
-
-
-  # Tests
-  - type: api-contract-tests
-    url: http://example.com/contract/tests/  
-
-  - type: api-integration-tests
-    url: http://example.com/integration/tests/  
-
-  - type: api-performance-tests
-    url: http://example.com/performance/tests/  
-
-
-  # Security
+  # Uptime TEsts
+  - type: api-uptime-test
+    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/collection/35240-4ccc2d5a-4a6f-4060-9157-6a7877e20338'    
+ 
+  # Security Tests
   - type: api-security-tests
-    url: http://example.com/security/tests/  
-
+    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/collection/35240-4ccc2d5a-4a6f-4060-9157-6a7877e20338' 
 
   # Monitors
   - type: api-uptime-monitor
-    url: 'https://example.com/uptime/monitor'    
-
-  - type: api-contract-testing-monitor
-    url: 'https://example.com/contract-testing/monitor'          
-
-  - type: api-security-testing-monitor
-    url: 'https://example.com/security-testing/monitor'      
-
-  - type: api-performance-testing-region
-    url: 'https://example.com/performance/monitor/us-east-1/'  
-
-  - type: api-performance-testing-region
-    url: 'https://example.com/performance/monitor/us-west-1/'     
-
-
-  # Observability
-  - type: api-observability-reports
-    url: 'https://example.com/observability/reports/'                         
-
-  - type: api-observability-apm
-    url: 'https://example.com/observability/apm/'  
-
-  - type: api-observability-aws-gateway-log
-    url: 'https://uab3sjk0mna.execute-api.us-east-1.amazonaws.com/usage'  
-
-  - type: api-observability-dashboard
-    url: 'https://example.com/observability/dashboard/'  
-
+    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/monitor/Testing-Uptime---APIs-io-Search~1ee42164-0de2-4c80-b9a6-257e30c42c9e'    
+  
+  - type: api-security-monitor
+    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/monitor/Testing-Security---APIs-io-Sear~1ee42184-20dc-40f0-a9ae-36642359b7a9'    
 
   # Distribution
   - type: api-developer-portal
-    url: 'https://developer.example.com'   
+    url: 'https://apis-io-api.apievangelist.com/'   
 
   - type: postman-network
-    url: 'https://explore.postman.com'   
-
+    url: 'https://www.postman.com/api-evangelist'    
 
   # Feedback Loop
   - type: issues
-    url: 'https://github.com/apis-json/apis-io-api/issues' 
+    url: 'https://github.com/api-search/developer-portal/issues' 
 
   - type: email
-    url: 'info@example.com'
-
-
-  # Legal
-  - type: api-terms-of-service
-    url: 'https://example.com/terms-of-service/' 
-
-  - type: api-license
-    url: 'https://example.com/license/'     
-    
-  - type: api-privacy-policy
-    url: 'https://example.com/privacy-policy/'            
+    url: 'info@apievangelist.com'
+        
 
 # Links to other related APIs.json
 include:
 
-  - name: PRoduct APIs.json
-    url: http://example.com/apis.json
+  - name: Consummer APIs.io
+    url: https://apis-io-api.apievangelist.com/apis-consumer.json   
 
-  - name: Consumer APIs.json
-    url: http://example.com/apis.json    
+  - name: Engineering APIs.io
+    url: https://apis-io-api.apievangelist.com/apis-engineering.json
+
+  - name: Product APIs.io
+    url: https://apis-io-api.apievangelist.com/apis-product.json   
 
 
 # Who is maintaining this APIs.json
