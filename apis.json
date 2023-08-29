@@ -1,4 +1,4 @@
 ---
 layout: none
 ---
-{{ site.data.apisjson-consumer | jsonify }}
+{{ site.data.apisjson-product | jsonify }}
