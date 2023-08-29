@@ -67,50 +67,6 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com                  
 
-  - name: APIs.io Tags API
-    description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
-    image: http://apis.io/logo_square.png
-    humanURL: https://apis-io-tags-api.apievangelist.com/
-    baseURL: http://apis.io/api/
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Tags
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://apis-io-tags-api.apievangelist.com/
-
-      - type: postman-collection
-        url: https://www.postman.com/api-evangelist/workspace/
-
-      - type: openapi
-        url: https://apis-io-tags-api.apievangelist.com/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: API Evangelist
-        email: info@apievangelist.com
-
 properties:
 
   # Workspaces
