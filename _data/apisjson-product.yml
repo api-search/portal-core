@@ -26,7 +26,7 @@ apis:
     description: This is the API behind the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-search-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: https://ibmwu99rx3.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
@@ -67,11 +67,122 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com  
 
+  - name: APIs.io Engine API
+    description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
+    image: http://apis.io/logo_square.png
+    humanURL: https://apis-io-engine-api.apievangelist.com/
+    baseURL: https://8wmp1s1pni.execute-api.us-east-1.amazonaws.com/staging
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Engine
+      - Harvest
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://aengine-api.apievangelist.com/pis-io-
+
+      - type: postman-collection
+        url: https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/collection/35240-c0e38392-8588-4d8e-9584-f5633eeaf036
+
+      - type: openapi
+        url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/engine-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/engine-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'        
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com      
+
+  - name: APIs.io Linter API
+    description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
+    image: https://apis-io-linter-api.apievangelist.com/
+    humanURL: http://apis-io-linter-api.apievangelist.com
+    baseURL: https://iuwhp1w2ha.execute-api.us-east-1.amazonaws.com/staging
+
+    # Design
+    # Pre-Release    
+    # Active
+    # Recommended
+    # Retired
+    # Deprecated
+    maturity: 'Active'
+
+    # Public
+    # Partner
+    # Internal
+    # Group
+    # Team
+    access: 'Public'     
+    
+    tags:
+    
+      - APIs
+      - Linter
+      - Spectral
+      - Rules
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://apis-io-linter-api.apievangelist.com/
+
+      - type: postman-collection
+        url: https://www.postman.com/api-evangelist/workspace/
+
+      - type: openapi
+        url: https://apis-io-linter-api.apievangelist.com/openapi.yml 
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/linter-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/linter-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/8wmp1s1pni/resources/h27obxah7e'         
+
+    # VCard Contact 
+    contact:
+
+      - FN: API Evangelist
+        email: info@apievangelist.com        
+
   - name: APIs.io Maintainers API
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-maintainers-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: https://qh1byck02g.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
@@ -116,7 +227,7 @@ apis:
     description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-properties-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: https://a7b2nfuqoj.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
@@ -160,7 +271,7 @@ apis:
     description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-publishing-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: ttps://zygznnor01.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
@@ -205,7 +316,7 @@ apis:
     description: This is the ratings engine for the APIs.io API search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-ratings-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: https://yzd9042kgi.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
@@ -250,7 +361,7 @@ apis:
     description: This is the API for managing rules that are used to govern the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-rules-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: https://6kpz00anv5.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
@@ -295,7 +406,7 @@ apis:
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
     image: http://apis.io/logo_square.png
     humanURL: https://apis-io-tags-api.apievangelist.com/
-    baseURL: http://apis.io/api/
+    baseURL: https://b5q22x91n3.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
     # Pre-Release    
