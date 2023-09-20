@@ -5,7 +5,7 @@ specificationType: 'Consumer'
 # Overview of this API
 name: APIs.io
 description: This a collection of designed for public developers building on the APIs.io API search engine APIs.
-image: http://apis.io/logo_square.png
+image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
 
 # Tags for helping organize
 tags:
@@ -24,7 +24,7 @@ apis:
 
   - name: APIs.io Search API
     description: This is the API behind the APIs.io search engine.
-    image: http://apis.io/logo_square.png
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-search-api.apievangelist.com/
     baseURL: http://apis.io/api/
 
