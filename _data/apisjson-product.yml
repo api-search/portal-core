@@ -3,7 +3,7 @@ specificationVersion: '0.15'
 specificationType: 'Product'
 
 # Overview of this API
-name: APIs.io (Product)
+name: APIs.io
 description: This is the API to access APIs.io API search engine, from the product management perspective.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
 
@@ -22,7 +22,7 @@ url: https://apis-io-api.apievangelist.com/apis-product.json
 
 apis:
 
-  - name: APIs.io Search API
+  - name: Search API
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-search-api.apievangelist.com/
@@ -67,7 +67,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com  
 
-  - name: APIs.io Engine API
+  - name: Engine API
     description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-engine-api.apievangelist.com/
@@ -122,7 +122,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com      
 
-  - name: APIs.io Linter API
+  - name: Linter API
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
     image: https://apis-io-linter-api.apievangelist.com/
     humanURL: http://apis-io-linter-api.apievangelist.com
@@ -178,7 +178,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com        
 
-  - name: APIs.io Maintainers API
+  - name: Maintainers API
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-maintainers-api.apievangelist.com/
@@ -223,7 +223,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com      
 
-  - name: APIs.io Properties API
+  - name: Properties API
     description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-properties-api.apievangelist.com/
@@ -267,7 +267,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com
 
-  - name: APIs.io Publishing API
+  - name: Publishing API
     description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-publishing-api.apievangelist.com/
@@ -312,7 +312,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com  
 
-  - name: APIs.io Ratings API
+  - name: Ratings API
     description: This is the ratings engine for the APIs.io API search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-ratings-api.apievangelist.com/
@@ -357,7 +357,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com 
 
-  - name: APIs.io Rules API
+  - name: Rules API
     description: This is the API for managing rules that are used to govern the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-rules-api.apievangelist.com/
@@ -402,7 +402,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com                
 
-  - name: APIs.io Tags API
+  - name: Tags API
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://apis-io-tags-api.apievangelist.com/
