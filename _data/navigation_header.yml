@@ -4,22 +4,16 @@ left:
     url: /
 
   - title: About
-    url: /about
+    url: /about  
 
-  - title: Getting Started
-    url: /getting-started     
-
-  - title: Authentication
+  - title: Auth
     url: /authentication   
 
-  - title: Documentation
+  - title: Docs
     url: /documentation
 
   - title: Plans
     url: /plans
-
-  - title: SDKs
-    url: /sdks 
 
   - title: Blog
     url: /blog
