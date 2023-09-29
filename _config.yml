@@ -12,7 +12,7 @@ permalink: /:categories/:year/:month/:day/:title/
 url:                "https://apis-io-api.apievangelist.com"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
+logo:               https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-search-logo.jpg
 
 navbar:
     sticky:         true
