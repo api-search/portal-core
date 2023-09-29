@@ -2,9 +2,9 @@
 layout: page
 title: APIs.io APIs
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The APIs.io web site is powered by APIs, so it makes sense to publish the APIs for others to use. The one you are probably interested in is the APIs.io Search API, as the others are designed to operate the search engine. But, you never know, so we made sure and publish all of them here for you to explore. 
 
-{% assign apisjson = site.data.apisjson-consumer %}
+{% assign apisjson = site.data.apisjson-product %}
 <div class="container">
     <div class="row">
 
@@ -23,5 +23,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     </div>
 </div>
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+APIs.io is about making APIs available via search, but it is also designed to demonstrate a high bar for how you can run an API using APIs.json is not just the index, but a rating system. Because of this we are interested in providing as many of the success API platform building blocks as possible.
