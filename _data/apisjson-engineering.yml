@@ -516,7 +516,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com
 
-properties:
+common:
 
   # Requirements
   - type: api-business-requirements

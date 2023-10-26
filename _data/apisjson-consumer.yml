@@ -67,7 +67,7 @@ apis:
       - FN: API Evangelist
         email: info@apievangelist.com                  
 
-properties:
+common:
 
   # Workspaces
   - type: postman-public-workspace
