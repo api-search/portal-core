@@ -1,9 +1,9 @@
 - view_sort: A
   name: LinkedIn
   identifier: linkedin
-  url: 'https://www.linkedin.com/in/kinlane/'
+  url: 'https://www.linkedin.com/company/apis-io/'
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Since APIs.io, and APIs are a very business centered concept, LinkedIn is our social platform of choice. Visit LinkedIn to stay tuned with updates and engage with us as we add more APIs to the platform and refine how the API search algorithm works.
   image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
   category: Social
 - view_sort: B
@@ -11,7 +11,7 @@
   identifier: github
   url: 'https://github.com/api-search'
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    This entire project is managed via the GitHub organization. If you want to learn anything about the project, fork, or engage with any of the modules of the website, APIs, or other support aspects of the project--don't be afraid of rolling your sleeves up and help out.
   image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github.png'
   category: Code
 - view_sort: C
@@ -19,6 +19,6 @@
   identifier: email
   url: 'https://github.com/orgs/api-search/discussions'
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    We are trying to steer most ongoing discussions to the GitHub discussions forum because these conversations can live on and onboard new users over time. Feel free to start any new discussion--if it is about discovering APIs we want to talking about it here.
   image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-email-at.png'
   category: Discussions  

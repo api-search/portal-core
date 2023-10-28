@@ -2,7 +2,7 @@
 layout: page
 title: Support
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We offer a number of ways you can get support. APIs.io is an open source project, depending on the free time of a handful of people, so we lean on GitHub to support of the work, but we still recognize that LinkedIn is still a viable social network. However, most of the ongoing work and conversations around this project will occur via the discussions forum.
 
 {% assign supports = site.data.support %}
 <div class="container">
@@ -23,4 +23,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     </div>
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+If you have any questions, find the channel that works for your and make yourself heard. I'd make sure you explore the discussions first, but don't hesitate to start a new discussion, leave an issue on one of the projects. We are just getting started with this project and want to hear from the community before we invest in any new work, so share your thoughts.
