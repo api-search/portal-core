@@ -18,14 +18,14 @@ tags:
 created: '2023-07-26'
 modified: '2023-08-22'  
 
-url: https://apis-io-api.apievangelist.com/apis-product.json
+url: https://developer.apis.io/apis-product.json
 
 apis:
 
   - name: Search API
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-search-api.apievangelist.com/
+    humanURL: https://search-docs.apis.io
     baseURL: https://ibmwu99rx3.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -53,13 +53,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-search-api.apievangelist.com/
+        url: https://search-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-search-api.apievangelist.com/openapi.yml 
+        url: https://search-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -70,7 +70,7 @@ apis:
   - name: Engine API
     description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-engine-api.apievangelist.com/
+    humanURL: https://engine-docs.apis.io/
     baseURL: https://8wmp1s1pni.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -98,13 +98,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://aengine-api.apievangelist.com/pis-io-
+        url: https://engine-docs.apis.io/
 
       - type: postman-collection
         url: https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/collection/35240-c0e38392-8588-4d8e-9584-f5633eeaf036
 
       - type: openapi
-        url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+        url: https://engine-docs.apis.io/openapi.yml
 
       # Deployment
       - type: github-repository
@@ -125,7 +125,7 @@ apis:
   - name: Linter API
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
     image: https://apis-io-linter-api.apievangelist.com/
-    humanURL: http://apis-io-linter-api.apievangelist.com
+    humanURL: http://linter-docs.apis.io
     baseURL: https://iuwhp1w2ha.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -154,13 +154,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-linter-api.apievangelist.com/
+        url: http://linter-docs.apis.io
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-linter-api.apievangelist.com/openapi.yml 
+        url: http://linter-docs.apis.ioopenapi.yml 
 
       # Deployment
       - type: github-repository
@@ -181,7 +181,7 @@ apis:
   - name: Maintainers API
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-maintainers-api.apievangelist.com/
+    humanURL: https://maintainers-docs.apis.io/
     baseURL: https://qh1byck02g.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -209,13 +209,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-maintainers-api.apievangelist.com/
+        url: https://maintainers-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-maintainers-api.apievangelist.com/openapi.yml 
+        url: https://maintainers-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -226,7 +226,7 @@ apis:
   - name: Properties API
     description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-properties-api.apievangelist.com/
+    humanURL: https://properties-docs.apis.io/
     baseURL: https://a7b2nfuqoj.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -253,13 +253,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-properties-api.apievangelist.com/
+        url: https://properties-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-properties-api.apievangelist.com/openapi.yml 
+        url: https://properties-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -270,7 +270,7 @@ apis:
   - name: Publishing API
     description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-publishing-api.apievangelist.com/
+    humanURL: https://publishing-docs.apis.io/
     baseURL: ttps://zygznnor01.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -298,13 +298,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-publishing-api.apievangelist.com/
+        url: https://publishing-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-publishing-api.apievangelist.com/openapi.yml 
+        url: https://publishing-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -315,7 +315,7 @@ apis:
   - name: Ratings API
     description: This is the ratings engine for the APIs.io API search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-ratings-api.apievangelist.com/
+    humanURL: https://ratings-docs.apis.io/
     baseURL: https://yzd9042kgi.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -343,13 +343,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-ratings-api.apievangelist.com/
+        url: https://ratings-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-ratings-api.apievangelist.com/openapi.yml 
+        url: https://ratings-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -360,7 +360,7 @@ apis:
   - name: Rules API
     description: This is the API for managing rules that are used to govern the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-rules-api.apievangelist.com/
+    humanURL: https://rules-docs.apis.io/
     baseURL: https://6kpz00anv5.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -388,13 +388,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-rules-api.apievangelist.com/
+        url: https://rules-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-rules-api.apievangelist.com/openapi.yml 
+        url: https://rules-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -405,7 +405,7 @@ apis:
   - name: Tags API
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-tags-api.apievangelist.com/
+    humanURL: https://tags-docs.apis.io/
     baseURL: https://b5q22x91n3.execute-api.us-east-1.amazonaws.com/staging
 
     # Design
@@ -432,13 +432,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-tags-api.apievangelist.com/
+        url: https://tags-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-tags-api.apievangelist.com/openapi.yml 
+        url: https://tags-docs.apis.io/openapi.yml 
 
     # VCard Contact 
     contact:
@@ -477,27 +477,27 @@ common:
 
   # Onboarding
   - type: api-getting-started
-    url: 'https://apis-io-api.apievangelist.com/getting-started/'  
+    url: 'https://developer.apis.io/getting-started/'  
 
   - type: api-plans
-    url: 'https://apis-io-api.apievangelist.com/plans/'         
+    url: 'https://developer.apis.io/plans/'         
 
   - type: api-authentication
-    url: 'https://apis-io-api.apievangelist.com/authentication/'            
+    url: 'https://developer.apis.io/authentication/'            
 
   - type: postman-collection
     url: 'https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-01bfd049-809d-49aa-be48-b8b41094f8cd'         
 
   # Change
   - type: api-road-map
-    url: https://apis-io-api.apievangelist.com/road-map/
+    url: https://developer.apis.io/road-map/
 
   - type: api-change-log
-    url: https://apis-io-api.apievangelist.com/change-log/                             
+    url: https://developer.apis.io/change-log/                             
 
   # Code
   - type: api-sdks
-    url: https://apis-io-api.apievangelist.com/sdks/                                          
+    url: https://developer.apis.io/sdks/                                          
 
   # Monitors
   - type: api-uptime-monitor
@@ -506,7 +506,7 @@ common:
 
   # Distribution
   - type: api-developer-portal
-    url: 'https://apis-io-api.apievangelist.com/'   
+    url: 'https://developer.apis.io/'   
 
   - type: postman-network
     url: 'https://www.postman.com/api-evangelist'   
@@ -514,10 +514,10 @@ common:
 
   # Communication
   - type: blog
-    url: 'https://apis-io-api.apievangelist.com/blog/' 
+    url: 'https://developer.apis.io/blog/' 
 
   - type: videos
-    url: 'https://apis-io-api.apievangelist.com/videos/'   
+    url: 'https://developer.apis.io/videos/'   
 
 
   # Feedback Loop
@@ -530,25 +530,25 @@ common:
 
   # Legal
   - type: api-terms-of-service
-    url: 'https://apis-io-api.apievangelist.com/terms-of-service/' 
+    url: 'https://developer.apis.io/terms-of-service/' 
 
   - type: api-license
-    url: 'https://apis-io-api.apievangelist.com/licensing/'     
+    url: 'https://developer.apis.io/licensing/'     
     
   - type: api-privacy-policy
-    url: 'https://apis-io-api.apievangelist.com/privacy-policy/'            
+    url: 'https://developer.apis.io/privacy-policy/'            
 
 # Links to other related APIs.json
 include:
 
   - name: Consummer APIs.io
-    url: https://apis-io-api.apievangelist.com/apis-consumer.json   
+    url: https://developer.apis.io/apis-consumer.json   
 
   - name: Engineering APIs.io
-    url: https://apis-io-api.apievangelist.com/apis-engineering.json
+    url: https://developer.apis.io/apis-engineering.json
 
   - name: Platform APIs.io
-    url: https://apis-io-api.apievangelist.com/apis-platform.json
+    url: https://developer.apis.io/apis-platform.json
     
 
 # Who is maintaining this APIs.json

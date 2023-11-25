@@ -25,7 +25,7 @@ apis:
   - name: APIs.io Engine API
     description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-engine-api.apievangelist.com/
+    humanURL: https://engine-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -53,13 +53,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://aengine-api.apievangelist.com/pis-io-
+        url: https://engine-docs.apis.io/
 
       - type: postman-collection
         url: https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/collection/35240-c0e38392-8588-4d8e-9584-f5633eeaf036
 
       - type: openapi
-        url: https://apis-io-engine-api.apievangelist.com/openapi.yml
+        url: https://engine-docs.apis.io/openapi.yml
 
       # Deployment
       - type: github-repository
@@ -79,8 +79,8 @@ apis:
 
   - name: APIs.io Linter API
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
-    image: https://apis-io-linter-api.apievangelist.com/
-    humanURL: http://apis.io/api
+    image: https://linter-docs.apis.io/
+    humanURL: https://linter-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -109,13 +109,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-linter-api.apievangelist.com/
+        url: https://linter-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-linter-api.apievangelist.com/openapi.yml 
+        url: https://linter-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -136,7 +136,7 @@ apis:
   - name: APIs.io Maintainers API
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-maintainers-api.apievangelist.com/
+    humanURL: https://maintainers-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -164,13 +164,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-maintainers-api.apievangelist.com/
+        url: https://maintainers-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-maintainers-api.apievangelist.com/openapi.yml 
+        url: https://maintainers-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -191,7 +191,7 @@ apis:
   - name: APIs.io Properties API
     description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-properties-api.apievangelist.com/
+    humanURL: https://properties-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -218,13 +218,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-properties-api.apievangelist.com/
+        url: https://properties-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-properties-api.apievangelist.com/openapi.yml 
+        url: https://properties-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -245,7 +245,7 @@ apis:
   - name: APIs.io Publishing API
     description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-publishing-api.apievangelist.com/
+    humanURL: https://publishing-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -273,13 +273,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-publishing-api.apievangelist.com/
+        url: https://publishing-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-publishing-api.apievangelist.com/openapi.yml 
+        url: https://publishing-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -300,7 +300,7 @@ apis:
   - name: APIs.io Ratings API
     description: This is the ratings engine for the APIs.io API search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-ratings-api.apievangelist.com/
+    humanURL: https://ratings-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -328,13 +328,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-ratings-api.apievangelist.com/
+        url: https://ratings-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-ratings-api.apievangelist.com/openapi.yml 
+        url: https://ratings-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -355,7 +355,7 @@ apis:
   - name: APIs.io Rules API
     description: This is the API for managing rules that are used to govern the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-rules-api.apievangelist.com/
+    humanURL: https://rules-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -383,13 +383,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-rules-api.apievangelist.com/
+        url: https://rules-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-rules-api.apievangelist.com/openapi.yml 
+        url: https://rules-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -410,7 +410,7 @@ apis:
   - name: APIs.io Search API
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-search-api.apievangelist.com/
+    humanURL: https://search-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -438,13 +438,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-search-api.apievangelist.com/
+        url: https://search-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-search-api.apievangelist.com/openapi.yml 
+        url: https://search-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
@@ -465,7 +465,7 @@ apis:
   - name: APIs.io Tags API
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://apis-io-tags-api.apievangelist.com/
+    humanURL: https://tags-docs.apis.io/
     baseURL: http://apis.io/api/
 
     # Design
@@ -492,13 +492,13 @@ apis:
 
       # Documentation
       - type: documentation
-        url: https://apis-io-tags-api.apievangelist.com/
+        url: https://tags-docs.apis.io/
 
       - type: postman-collection
         url: https://www.postman.com/api-evangelist/workspace/
 
       - type: openapi
-        url: https://apis-io-tags-api.apievangelist.com/openapi.yml 
+        url: https://tags-docs.apis.io/openapi.yml 
 
       # Deployment
       - type: github-repository
