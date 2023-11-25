@@ -124,7 +124,7 @@ apis:
 
   - name: Linter API
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
-    image: https://apis-io-linter-api.apievangelist.com/
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: http://linter-docs.apis.io
     baseURL: https://iuwhp1w2ha.execute-api.us-east-1.amazonaws.com/staging
 

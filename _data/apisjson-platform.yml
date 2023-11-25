@@ -18,7 +18,7 @@ tags:
 created: '2023-07-26'
 modified: '2023-08-22'  
 
-url: https://apis-io-api.apievangelist.com/apis-platform.json
+url: https://developer.apis.io/apis-platform.json
 
 apis:
  
@@ -554,27 +554,27 @@ common:
 
   # Onboarding
   - type: api-getting-started
-    url: 'https://apis-io-api.apievangelist.com/getting-started/'  
+    url: 'https://developer.apis.io/getting-started/'  
 
   - type: api-plans
-    url: 'https://apis-io-api.apievangelist.com/plans/'         
+    url: 'https://developer.apis.io/plans/'         
 
   - type: api-authentication
-    url: 'https://apis-io-api.apievangelist.com/authentication/'            
+    url: 'https://developer.apis.io/authentication/'            
 
   - type: postman-collection
     url: 'https://www.postman.com/api-evangelist/workspace/apis-io/collection/35240-01bfd049-809d-49aa-be48-b8b41094f8cd'         
 
   # Change
   - type: api-road-map
-    url: https://apis-io-api.apievangelist.com/road-map/
+    url: https://developer.apis.io/road-map/
 
   - type: api-change-log
-    url: https://apis-io-api.apievangelist.com/change-log/                             
+    url: https://developer.apis.io/change-log/                             
 
   # Code
   - type: api-sdks
-    url: https://apis-io-api.apievangelist.com/sdks/                                          
+    url: https://developer.apis.io/sdks/                                          
 
   # Uptime TEsts
   - type: api-uptime-test
@@ -593,7 +593,7 @@ common:
 
   # Distribution
   - type: api-developer-portal
-    url: 'https://apis-io-api.apievangelist.com/'   
+    url: 'https://developer.apis.io/'   
 
   - type: postman-network
     url: 'https://www.postman.com/api-evangelist'    
@@ -610,13 +610,13 @@ common:
 include:
 
   - name: Consummer APIs.io
-    url: https://apis-io-api.apievangelist.com/apis-consumer.json   
+    url: https://developer.apis.io/apis-consumer.json   
 
   - name: Engineering APIs.io
-    url: https://apis-io-api.apievangelist.com/apis-engineering.json
+    url: https://developer.apis.io/apis-engineering.json
 
   - name: Product APIs.io
-    url: https://apis-io-api.apievangelist.com/apis-product.json   
+    url: https://developer.apis.io/apis-product.json   
 
 
 # Who is maintaining this APIs.json
