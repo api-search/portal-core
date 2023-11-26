@@ -26,7 +26,7 @@ apis:
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://search-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://search-api.apis.io
 
     # Design
     # Pre-Release    

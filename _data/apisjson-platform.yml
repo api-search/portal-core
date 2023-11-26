@@ -26,7 +26,7 @@ apis:
     description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://engine-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://engine-api.apis.io
 
     # Design
     # Pre-Release    
@@ -81,7 +81,7 @@ apis:
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
     image: https://apis-io-linter-api.apievangelist.com/
     humanURL: https://linter-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://linter-api.apis.io
 
     # Design
     # Pre-Release    
@@ -137,7 +137,7 @@ apis:
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://maintainers-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://maintainers-api.apis.io
 
     # Design
     # Pre-Release    
@@ -192,7 +192,7 @@ apis:
     description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://properties-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://properties-api.apis.io
 
     # Design
     # Pre-Release    
@@ -246,7 +246,7 @@ apis:
     description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://publishing-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://publishing-api.apis.io
 
     # Design
     # Pre-Release    
@@ -301,7 +301,7 @@ apis:
     description: This is the ratings engine for the APIs.io API search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://ratings-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://ratings-api.apis.io
 
     # Design
     # Pre-Release    
@@ -356,7 +356,7 @@ apis:
     description: This is the API for managing rules that are used to govern the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://rules-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://rules-api.apis.io
 
     # Design
     # Pre-Release    
@@ -411,7 +411,7 @@ apis:
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://search-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://search-api.apis.io
 
     # Design
     # Pre-Release    
@@ -466,7 +466,7 @@ apis:
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://tags-docs.apis.io/
-    baseURL: http://apis.io/api/
+    baseURL: http://tags-api.apis.io
 
     # Design
     # Pre-Release    
