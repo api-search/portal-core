@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 'An APIs.io Prototype'
-image: https://apis-io-api.apievangelist.com/images/diagram-2.jpg
+image: https://developer.apis.io/images/diagram-2.jpg
 author:
     name: kinlane
 tags:
@@ -27,7 +27,7 @@ To demonstrate the rating system I had to apply the API rating to the APIs.io AP
 
 Then I found some of the other APIs.json files for providers that still exist out there. I will continue finding more, and also publish a bunch that I have created, but I wanted to get started with just a few--then push the engine and rating system by adding more. I can submit new APIs.json using the Search API, then it pulls the APIs.json using the Engine API, then rates the APIs.json using the Ratings API which uses the Rules API and Ling API to make the magic happen. Then using the publishing API it publishes APIs to the web site.
 
-There are two web sites, [the search engine](https://apis-io-site.apievangelist.com/) and the [developer portal for the API](https://apis-io-api.apievangelist.com/), which has the APIs.json for APIs.io and all the supporting properties. While the website has state page for all APIs, the search is dynamic through the Search API, returning results with each key stroke -- I will keep working on this user experience. I was able to achieve an API search using the APIs.json for APIs.io, as well as the handful of other providers that I have included in the index--next, I will pull APIs.json from my archives and begin submitting to see what quality I endue with.
+There are two web sites, [the search engine](https://apis.io/) and the [developer portal for the API](https://developer.apis.io/), which has the APIs.json for APIs.io and all the supporting properties. While the website has state page for all APIs, the search is dynamic through the Search API, returning results with each key stroke -- I will keep working on this user experience. I was able to achieve an API search using the APIs.json for APIs.io, as well as the handful of other providers that I have included in the index--next, I will pull APIs.json from my archives and begin submitting to see what quality I endue with.
 
 The details of each API are pretty messy coming in, and I added the properties, maintainers, and tags APIs to begin getting a handle on these elements -- while you will want to keep things as they were submitted by the APIs.json author, there will be things you want to translate, evolve, and change as things come in. I added these three layers for managing these three key dimensions of the index, but then also make it easy to publish them as part of the web site browsing and search.
 
