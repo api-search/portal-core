@@ -140,9 +140,6 @@ common:
   # Legal
   - type: api-terms-of-service
     url: 'https://example.com/terms-of-service/' 
-
-  - type: api-license
-    url: 'https://example.com/license/'     
     
   - type: api-privacy-policy
     url: 'https://example.com/privacy-policy/'                                               

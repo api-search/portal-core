@@ -530,10 +530,7 @@ common:
 
   # Legal
   - type: api-terms-of-service
-    url: 'https://developer.apis.io/terms-of-service/' 
-
-  - type: api-license
-    url: 'https://developer.apis.io/licensing/'     
+    url: 'https://developer.apis.io/terms-of-service/'  
     
   - type: api-privacy-policy
     url: 'https://developer.apis.io/privacy-policy/'            
