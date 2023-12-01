@@ -403,7 +403,7 @@ apis:
         email: info@apievangelist.com                
 
   - name: Tags API
-    description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
+    description: This is the API for managing the tags that are indexed as part of the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
     humanURL: https://tags-docs.apis.io/
     baseURL: https://tags-api.apis.io
