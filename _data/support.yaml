@@ -1,9 +1,9 @@
 - view_sort: A
   name: LinkedIn
   identifier: linkedin
-  url: 'https://www.linkedin.com/company/apis-io/'
+  url: 'https://www.linkedin.com/company/apis-io/about/'
   description: >-
-    Since APIs.io, and APIs are a very business centered concept, LinkedIn is our social platform of choice. Visit LinkedIn to stay tuned with updates and engage with us as we add more APIs to the platform and refine how the API search algorithm works.
+    You can stay aware of the latest updates about APIs.io using our LinkedIn page, using the business social network as our primary way of engaging with the community via the platform.
   image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
   category: Social
 - view_sort: B
@@ -11,7 +11,7 @@
   identifier: github
   url: 'https://github.com/api-search'
   description: >-
-    This entire project is managed via the GitHub organization. If you want to learn anything about the project, fork, or engage with any of the modules of the website, APIs, or other support aspects of the project--don't be afraid of rolling your sleeves up and help out.
+    All of APIs.io is managed using GitHub, with the repositories behind each of the APIs, as well as the static websites, developer portal, and administrative sites all running via GitHub.
   image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-github.png'
   category: Code
 - view_sort: C
@@ -19,6 +19,6 @@
   identifier: email
   url: 'https://github.com/orgs/api-search/discussions'
   description: >-
-    We are trying to steer most ongoing discussions to the GitHub discussions forum because these conversations can live on and onboard new users over time. Feel free to start any new discussion--if it is about discovering APIs we want to talking about it here.
+    All discussions around building and evolving the APIs.io search engine, as well as the creation of individual APIs.json files for specific APIs are conducted via GitHub discussions.
   image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-email-at.png'
   category: Discussions  
