@@ -33,5 +33,5 @@ The search endpoint for APIs.io is wide open, but to integrate the API into your
 
     </div>
 </div>
-
+<br>
 If you don't know which plan is right for us, just visit our support page and drop us a line, and we will talk more about what you are looking to do and we can add custom tiers and access tokens to get you the access you need.

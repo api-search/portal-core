@@ -22,5 +22,5 @@ We offer a number of ways you can get support. APIs.io is an open source project
 
     </div>
 </div>
-
+<br>
 If you have any questions, find the channel that works for your and make yourself heard. I'd make sure you explore the discussions first, but don't hesitate to start a new discussion, leave an issue on one of the projects. We are just getting started with this project and want to hear from the community before we invest in any new work, so share your thoughts.

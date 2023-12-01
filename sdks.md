@@ -22,5 +22,5 @@ We offer a suite of auto-generated SDKs, using the [OpenAPI](https://search-docs
 
     </div>
 </div>
-
+<br>
 If there is a specific language you'd like to see an SDK for, or another platform, let us know, or see if you can use the OpenAPI to generate what you need using another 3rd party service.
