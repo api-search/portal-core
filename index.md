@@ -32,7 +32,7 @@ hero:
             <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Plans</h5>
-                <p class="card-text">Find the access plan that will support how you will be using the APIs.io API in your application.</p>
+                <p class="card-text">Find which of the two access plans will support how you will be using the APIs.io API in your application or integration.</p>
                 <a href="/plans" class="btn btn-primary">Go</a>
             </div>
             </div>
