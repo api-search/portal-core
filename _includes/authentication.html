@@ -1,0 +1,72 @@
+<div class="hero-search">
+
+    <div class="uk-position-relative">
+        <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;" style="padding: 25px 50px 50px 50px;">
+            <label><a href="https://github.com/settings/tokens" style="font-weight: bold; font-size: 18px; color:#000;">GitHub Personal Access Token:</a></label>
+            <input id="validate-token" class="uk-search-input uk-box-shadow-large" type="search" placeholder="[your token]" style="width: 50%; margin-left: 15px; margin-right: 15px;">
+            <input type="submit" value="Add" style="border-radius: 4px;" onclick="validateToken();">
+        </form>
+        <ul id="validate-token" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+    </div>
+    <div class="alert alert-success" role="alert" style="display: none; text-align: center;" id="success-alert"></div>
+    <div class="alert alert-warning" role="alert" style="display: none; text-align: center;" id="warning-alert"></div>
+    <div class="alert alert-danger" role="alert" style="display: none; text-align: center;" id="danger-alert"></div>
+    <script>
+        function hideAlert(){
+            document.getElementById("success-alert").style.display = 'none';
+            document.getElementById("warning-alert").style.display = 'none';
+            document.getElementById("danger-alert").style.display = 'none';   
+            document.getElementById("validate-token").value = '';         
+        }
+        function validateToken(){
+
+            var submit_api = {};
+            submit_api.token = document.getElementById("validate-token").value;
+
+            fetch('https://auth-api.apis.io/token/validation', {
+                method: 'POST',
+                body: JSON.stringify(submit_api),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8'
+                }
+            })       
+            .then(function(response) {
+                if (!response.ok) {
+                    console.log('Error with Status Code: ' + response.status);
+                    return;
+                }
+                response.json().then(function(data) {	
+
+                    if(data.message == 'Added as key to API plan.'){
+                        document.getElementById("success-alert").innerHTML = data.message;
+                        document.getElementById("success-alert").style.display = '';
+                        setTimeout(hideAlert, 5000);  
+                    }
+                    else if(data.message == 'Problem adding the plan.'){
+                        document.getElementById("danger-alert").innerHTML = data.message;
+                        document.getElementById("danger-alert").style.display = '';
+                        setTimeout(hideAlert, 5000);  
+                    }      
+                    else{
+                        if(data.response){
+                            document.getElementById("danger-alert").innerHTML = data.message;
+                            document.getElementById("danger-alert").style.display = '';
+                            setTimeout(hideAlert, 5000);  
+                        }
+                        else{
+                            document.getElementById("danger-alert").innerHTML = "There was a problem validating."
+                            document.getElementById("danger-alert").style.display = '';
+                            setTimeout(hideAlert, 5000);                              
+                        }
+                    }             
+
+                    });
+                })
+                .catch(function(err) {
+                    console.log('Error: ' + err);
+            });            
+
+        }
+    </script>
+
+</div>

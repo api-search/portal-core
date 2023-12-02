@@ -2,6 +2,8 @@
 layout: page
 title: Authentication
 ---
-The authentication of the APIs.io is done via a token passed into the header via X-api-key property, providing the gateway what it needs to authenticate you. We will be providing (soon) a service where you can authenticate with GitHub, Google, or LinkedIn via OAuth and use the resulting token as the API key for the API.
+The authentication of the APIs.io is done via a token passed into a header name `X-api-key`, providing the gateway what it needs to authenticate you. To obtain a token, just head over to your [GitHub settings and generate a personal access token](https://github.com/settings/tokens) within minimal viable access to your GitHub profile--which we will then verify and add as API key for the APIs.io API.
 
-We will keep authentication simple for the API, providing two simple plans, with a third administrative and partner layer that allows access to the engine, linting, rating, and other APIs that make the platform operation. Our goal is to make it as easy as possible to onboard and begin working with the APIs, and we'll add analytics, and other capabilities as they are needed.
+{% include authentication.html %}
+
+Your API key will get you access to make more API calls to the APIs.io search API. We will add other API calls you can make to disable your token, access usage logs, and other capabilities over time, but we wanted to make it as easy as possible for anyone to authenticate with the APis.io, without having to sign up for yet another account.

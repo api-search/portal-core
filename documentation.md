@@ -22,5 +22,5 @@ The APIs.io web site is powered by APIs, so it makes sense to publish the APIs f
 
     </div>
 </div>
-
+<br>
 APIs.io is about making APIs available via search, but it is also designed to demonstrate a high bar for how you can run an API using APIs.json is not just the index, but a rating system. Because of this we are interested in providing as many of the success API platform building blocks as possible.
