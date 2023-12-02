@@ -1,36 +1,24 @@
 - step: 1
   name: Read Documentation
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    We provide separate interactive documentation for each of the API.io APIs, but the search API is probably the one you are interested in using, unless you are a partner and have contacted us about the verified plan.
   image: 'https://avatars.githubusercontent.com/u/3026872?s=200&v=4'
-  url: 'http://example.com/documentation/'
+  url: 'https://developer.apis.io/documentation/'
 - step: 2
   name: Generate GitHub Developer Token
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    To obtain a token, just head over to your [GitHub settings and generate a personal access token](https://github.com/settings/tokens) within minimal viable access to your GitHub profile--which we will then verify and add as API key for the APIs.io API.
   image: 'https://avatars.githubusercontent.com/u/3026872?s=200&v=4'
-  url: 'http://example.com/documentation/'  
-- step: 3
-  name: Fork the Postman Collection
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://avatars.githubusercontent.com/u/3026872?s=200&v=4'
-  url: 'http://example.com/documentation/'  
-- step: 4
-  name: Fork the Postman Environment
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://avatars.githubusercontent.com/u/3026872?s=200&v=4'
-  url: 'http://example.com/documentation/'  
+  url: 'https://developer.apis.io/authentication/'  
 - step: 5
-  name: Put Your GitHub Token Into API Key as Vaarible
+  name: Try API With Your Token
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    The documentation for each APIs.io API has a try it out function where you can put your API token in and begin making calls to the  API. You will be able to make up to 500 calls per day using your token, and if you need more you can contact us about bumping up to the verified plan.
   image: 'https://avatars.githubusercontent.com/u/3026872?s=200&v=4'
-  url: 'http://example.com/documentation/'  
+  url: 'https://developer.apis.io/documentation/'
 - step: 6
   name: Download SDK of Your Choice
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    If you are needing to integrate the API into an application you can download one of our SDKs in the programming language of your choice. If there is a platform or language that is not available, make sure to let us know so we can see if you can make it happen.
   image: 'https://avatars.githubusercontent.com/u/3026872?s=200&v=4'
-  url: 'http://example.com/documentation/'    
+  url: 'https://developer.apis.io/sdks/'    
