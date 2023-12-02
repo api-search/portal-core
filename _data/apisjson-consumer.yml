@@ -22,6 +22,46 @@ url: http://apis.io/apis-index.yml
 
 apis:
 
+  - name: Authentication API
+    description: This is the API for turning your GitHub Personal Access Token into an API key you can pass in to make API calls to the APIs.io API.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
+    humanURL: https://auth-docs.apis.io/
+    baseURL: https://auth-api.apis.io
+
+    maturity: 'Active'
+
+    access: 'Public'     
+    
+    tags:
+    
+      - Authentication
+      - Tokens
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://auth-docs.apis.io/
+
+      - type: openapi
+        url: https://auth-docs.apis.io/openapi.yml
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/authentication-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/authentication-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/main/apis/0d2ss3399l/resources'        
+
+    # VCard Contact 
+    contact:
+
+      - FN: APIs.io
+        email: info@apis.io  
+
   - name: APIs.io Search API
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
@@ -64,8 +104,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com                  
+      - FN: APIs.io
+        email: info@apis.io                 
 
 common:
 
@@ -146,11 +186,9 @@ common:
 
 # Links to other related APIs.json
 include: []  
-    
 
 # Who is maintaining this APIs.json
 maintainers:
 
-  - FN: API Evangelist
-    email: info@apievangelist.com
-    X-github: kinlane
+  - FN: APIs.io
+    email: info@apis.io

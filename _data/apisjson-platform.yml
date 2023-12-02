@@ -21,6 +21,46 @@ modified: '2023-08-22'
 url: https://developer.apis.io/apis-platform.json
 
 apis:
+
+  - name: Authentication API
+    description: This is the API for turning your GitHub Personal Access Token into an API key you can pass in to make API calls to the APIs.io API.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
+    humanURL: https://auth-docs.apis.io/
+    baseURL: https://auth-api.apis.io
+
+    maturity: 'Active'
+
+    access: 'Public'     
+    
+    tags:
+    
+      - Authentication
+      - Tokens
+    
+    properties:
+
+      # Documentation
+      - type: documentation
+        url: https://auth-docs.apis.io/
+
+      - type: openapi
+        url: https://auth-docs.apis.io/openapi.yml
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/authentication-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/authentication-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/main/apis/0d2ss3399l/resources'        
+
+    # VCard Contact 
+    contact:
+
+      - FN: APIs.io
+        email: info@apis.io  
  
   - name: APIs.io Engine API
     description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
@@ -74,12 +114,12 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com      
+      - FN: APIs.io
+        email: info@apis.io 
 
   - name: APIs.io Linter API
     description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
-    image: https://apis-io-linter-api.apievangelist.com/
+    image: https://linter-api.apis.io/
     humanURL: https://linter-docs.apis.io/
     baseURL: http://linter-api.apis.io
 
@@ -130,8 +170,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com
+      - FN: APIs.io
+        email: info@apis.io
 
   - name: APIs.io Maintainers API
     description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
@@ -185,8 +225,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com      
+      - FN: APIs.io
+        email: info@apis.io 
 
   - name: APIs.io Properties API
     description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
@@ -239,8 +279,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com
+      - FN: APIs.io
+        email: info@apis.io
 
   - name: APIs.io Publishing API
     description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
@@ -294,8 +334,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com  
+      - FN: APIs.io
+        email: info@apis.io 
 
   - name: APIs.io Ratings API
     description: This is the ratings engine for the APIs.io API search engine.
@@ -349,8 +389,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com 
+      - FN: APIs.io
+        email: info@apis.io
 
   - name: APIs.io Rules API
     description: This is the API for managing rules that are used to govern the APIs.io search engine.
@@ -404,8 +444,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com
+      - FN: APIs.io
+        email: info@apis.io
 
   - name: APIs.io Search API
     description: This is the API behind the APIs.io search engine.
@@ -459,8 +499,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com                  
+      - FN: APIs.io
+        email: info@apis.io             
 
   - name: APIs.io Tags API
     description: This is the API for managing all the tags that are indexed as part of the APIs.io search engine.
@@ -513,8 +553,8 @@ apis:
     # VCard Contact 
     contact:
 
-      - FN: API Evangelist
-        email: info@apievangelist.com
+      - FN: APIs.io
+        email: info@apis.io
 
 common:
 
@@ -603,7 +643,7 @@ common:
     url: 'https://github.com/api-search/developer-portal/issues' 
 
   - type: email
-    url: 'info@apievangelist.com'
+    url: 'info@apis.io'
         
 
 # Links to other related APIs.json
@@ -623,5 +663,5 @@ include:
 maintainers:
 
   - FN: Kin Lane
-    email: info@apievangelist.com
+    email: info@apis.io
     X-github: kinlane
