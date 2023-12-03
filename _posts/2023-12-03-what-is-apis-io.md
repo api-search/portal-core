@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 'What is APIs.io'
-image: https://developer.apis.io/images/diagram-2.jpg
+image: https://developer.apis.io/images/apis-io.jpg
 author:
     name: kinlane
 tags:
