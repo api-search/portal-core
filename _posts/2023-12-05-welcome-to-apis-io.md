@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: 'What is APIs.io'
+title: 'Welcome to APIs.io'
 image: https://developer.apis.io/images/apis-io.jpg
 author:
     name: kinlane
