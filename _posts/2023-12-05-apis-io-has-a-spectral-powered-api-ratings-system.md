@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 'APIs.io Has a Spectral Powered API Ratings System'
-image: https://developer.apis.io/images/apis-io.jpg
+image: https://kinlane-productions2.s3.amazonaws.com/ratings-sytem.png
 author:
     name: kinlane
 tags:
