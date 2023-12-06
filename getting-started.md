@@ -14,7 +14,7 @@ We work to try and make it as easy as possible for you to get started using the 
             <div class="card-body">
                 <h5 class="card-title">{{ step.step }}) {{ step.name }}</h5>
                 <p class="card-text">{{ step.description }}</p>
-                <a href="{{ step.link }}" class="btn btn-primary">Go</a>
+                <a href="{{ step.url }}" class="btn btn-primary">Go</a>
             </div>
             </div>
         </div>    
