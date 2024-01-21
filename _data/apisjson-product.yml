@@ -55,11 +55,19 @@ apis:
       - type: documentation
         url: https://search-docs.apis.io/
 
-      - type: postman-collection
-        url: https://www.postman.com/api-evangelist/workspace/
-
       - type: openapi
         url: https://search-docs.apis.io/openapi.yml 
+
+      # Deployment
+      - type: github-repository
+        url: 'https://github.com/api-search/search-api'
+
+      - type: github-action
+        url: 'https://github.com/api-search/search-api/actions'
+
+      - type: aws-api-gateway
+        url: 'https://us-east-1.console.aws.amazon.com/apigateway/main/apis/0d2ss3399l/resources'        
+
 
     # VCard Contact 
     contact:
