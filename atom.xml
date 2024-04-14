@@ -3,7 +3,7 @@ layout: none
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title }}</title>
+  <title>{{ site.name }}</title>
   {% for post in site.posts limit:25 %}{% if forloop.first == true %}{% assign updated = post.date %}<updated>{{ updated | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>{% endif %}{% endfor %}
   <link rel="self" href="{{ site.url }}/atom.xml"/>
   <author><name>Kin Lane</name></author>
