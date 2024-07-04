@@ -1,35 +1,9 @@
 ---
 layout: default
 ---
-
-<div class="uk-section">
-    <div class="uk-container uk-container-xsmall">
-        <article class="uk-article">
-
-            <h1 class="uk-article-title">{{ page.title | escape }}</h1>
-
-            <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
-                {% include post-meta.html %}
-            </div>
-
-            <div class="article-content">
-                <center><img src="{{ page.image }}" width="90%" align="center" style="padding: 5px;"></center>
-                {{ content }}
-            </div>
-
-            <hr class="uk-margin-medium">
-
-            {% include paginate-post.html %}
-            
-        </article>
-
-        <script>
-            // Table of contents scroll to
-            UIkit.scroll('#markdown-toc a', {
-                duration: 400,
-                offset: 120
-            });
-        </script>
-
-    </div>
-</div>
+{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+<h1>{{ page.title }}</h1>
+<p><i>{{ page.date | date: date_format }}</i></p>
+{{ page.content }}
+<p align="center"><a href="/blog"><strong>Return to Blog</strong></a></p>
+<br>

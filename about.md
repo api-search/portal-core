@@ -2,6 +2,7 @@
 layout: page
 title: About APIs.io Developer Portal
 ---
+# {{ page.title }}
 This is the developer portal for the API behind the [APIs.io API search engine](https://apis.io/). This site is meant to be a landing page for developers who are looking to build applications and integrations using the APIs.io search engine. However, it is also designed to be a model for how other API producers can shape the developer portals for their API.
 
 Our goal is to provide everything developers will need to use the APIs.io API, but also demonstrate the high bar for APIs that we index in the APIs.io directory. The APIs.io developer portal has all the properties of what we are looking for in the APIs that are available within the search API. Being the change we want to see when it comes to API discovery and developer experience across all industries.

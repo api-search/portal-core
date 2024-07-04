@@ -2,6 +2,7 @@
 layout: page
 title: Authentication
 ---
+# {{ page.title }}
 The authentication of the APIs.io is done via a token passed into a header name `X-api-key`, providing the gateway what it needs to authenticate you. To obtain a token, just head over to your [GitHub settings and generate a personal access token](https://github.com/settings/tokens) within minimal viable access to your GitHub profile--which we will then verify and add as API key for the APIs.io API.
 
 {% include authentication.html %}

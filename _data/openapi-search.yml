@@ -1,0 +1,700 @@
+openapi: 3.0.0
+
+info:
+
+  title: 'APIs.io Search API'
+  description: 'This is the API behind the APIs.io search engine.'
+  version: V1
+
+  contact:
+    name: Kin Lane
+    email: info@apievangelist.com
+
+servers:
+  - url: https://ibmwu99rx3.execute-api.us-east-1.amazonaws.com/staging  
+
+tags:
+
+  - name: Search
+    description: Search using the engine.     
+    
+paths:
+
+  /search/apis:
+
+    get:
+      operationId: searchAPIs
+      summary: Search APIs
+      description: 'Searching across all APIs by keyword, property type, or maintainer.'
+      parameters:
+
+        - name: search
+          description: 'Keyword to search by.'       
+          in: query
+          required: false
+          schema:
+            type: string                      
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: string
+
+      tags:
+        - Search
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Search"
+              example:
+                meta:
+                  search: AI
+                  limit: 50
+                  page: 0
+                  totalPages: 20
+                data:
+                - name: AssemblyAI API
+                  description: Built by AI experts, AssemblyAI’s Speech AI models include accurate
+                    speech-to-text for voice data (such as calls, virtual meetings, and podcasts),
+                    speaker detection, sentiment analysis, chapter detection, PII redaction, and more.
+                  searchUrl: https://ai.apis.io/apis/assemblyai/apis/
+                  apiUrl: https://www.assemblyai.com/docs/
+                  indexUrl: https://raw.githubusercontent.com/api-search/artificial-intelligence/main/_apis_/assemblyai/apis.md
+                  score: 546
+                  tags:
+                  - Artificial Intelligence
+                  - AI
+                links:
+                  self: "/search/apis/?search=&page=0&limit=50"
+                  next: "/search/apis/?search=&page=01&limit=50"
+                  last: "/search/apis/?search=&page=20&limit=50"
+        
+    post:
+      summary: Submit API
+      description: 'Submit an API to be included in the index.'
+      operationId: addAPI
+      tags:
+        - Search
+             
+      requestBody:
+        description: A valid APIs.json.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/APIsJSON"
+            example:
+              aid: apis.json
+              name: Example API
+              type: Index
+              description: |-
+                This is an example APIs.json file, demonstrating what is possible with
+                the API discovery specification.
+              image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+              tags:
+              - Application Programming Interface
+              - API
+              created: '2024-05-22'
+              modified: '2024-05-22'
+              url: http://example.com/apis.json
+              specificationVersion: '0.18'
+              apis:
+              - aid: apis.json:example-api
+                name: Example API
+                description: This provides details about a specific API, telling what is possible.
+                image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+                humanURL: http://example.com
+                baseURL: http://api.example.com
+                tags:
+                - API
+                - Application Programming Interface
+                properties:
+                - type: Documentation
+                  url: https://example.com/documentation
+                - type: OpenAPI
+                  url: http://example.com/openapi.yml
+              common:
+              - type: Signup
+                url: https://example.com/signup
+              - type: Login
+                url: https://example.com/login
+              - type: Authentication
+                url: http://example.com/authentication
+              maintainers:
+              - FN: Kin Lane
+                X-twitter: apievangelist
+                email: info@apievangelist.com
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/APIsJSON"               
+              example:
+                response: The API has been added to the APIs.io index.
+                url: https://github.com/apis-json/artisanal/tree/main/_apis/example-api/apis.md?plain=1
+                issue: https://github.com/apis-json/artisanal/issues/undefined
+
+
+components:
+
+  requestBodies:
+
+    AddAPIsJSON:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/AddAPIsJSON"
+      required: true
+
+    API:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Property:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Tag:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Maintainer:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true
+
+    Rule:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/API"
+      required: true                        
+  
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+  
+  schemas:
+
+    Search:
+      type: object
+      description: 'An JSON API object with metadata, data, and links.'
+      properties:
+        meta:
+          type: object
+          properties:
+            search:
+              type: string
+            type:
+              type: string    
+            limit:
+              type: integer 
+            page:
+              type: integer    
+            totalPages:
+              type: integer                                                 
+          required:
+           - totalPages
+           - page
+           - limit
+        data:
+          type: array
+          items:
+              anyOf:
+                - $ref: '#/components/schemas/API'
+                - $ref: '#/components/schemas/Property'
+                - $ref: '#/components/schemas/Maintainer'
+                - $ref: '#/components/schemas/Tag'
+          description: 'Listing of APIs in the JSON API format.'
+        links:
+          type: object
+          properties:
+            self:
+              type: string
+            first:
+              type: string
+            prev:
+              type: string
+            next:
+              type: string
+            last:
+              type: string
+          required:
+          - self
+      required:
+      - meta
+      - data
+      - links
+
+    AddAPIsJSON:
+      type: object
+      required:
+      - url
+      
+      properties:
+      
+        url:
+          type: string
+          description: URL where the apis.json file will live
+          pattern: "^(http)|(https)://(.*)$"
+
+    APIsJSON:
+      type: object
+      required:
+      - name
+      - description
+      - url
+      
+      properties:
+      
+        name:
+          type: string
+          description: The name of the service described
+          minLength: 5
+
+        description:
+          type: string
+          description: Description of the service
+          minLength: 5
+
+        url:
+          type: string
+          description: URL where the apis.json file will live
+          pattern: "^(http)|(https)://(.*)$"
+
+        image:
+          type: string
+          description: Image to represent the API
+
+        created:
+          type: string
+          format: date
+          description: Date when the file was created
+
+        modified:
+          type: string
+          format: date
+          description: Date when the file was modified
+
+        specificationVersion:
+          type: string
+          description: APIs.json spec version, latest is 0.14
+
+        apis:
+          type: array
+          items:
+            "$ref": "#/components/schemas/API"
+          description: All the APIs of this service
+
+        maintainers:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Maintainer"
+          description: Maintainers of the apis.json file
+
+        tags:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Tag"
+          description: Tags to describe the service
+
+        include:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Include"
+          description: Links to other apis.json definitions included in this service.
+
+    API:
+      description: The description of the API
+      required:
+        - name
+        - description
+        - image
+        - baseURL
+        - humanURL
+        - properties
+        - contact
+      properties:
+        name:
+          type: string
+          description: name
+          minLength: 5
+        description:
+          type: string
+          description: description of the API
+          minLength: 5
+        image:
+          type: string
+          description: URL of an image representing the API
+        baseURL:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+          description: baseURL
+        humanURL:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+          description: humanURL
+        tags:
+          type: array
+          items:
+            type: string
+            minLength: 1
+          description: tags to describe the API
+        properties:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Property"
+          description: URLs
+        contact:
+          type: array
+          items:
+            "$ref": "#/components/schemas/Contact"
+          description: Contact to reach if questions about API
+        meta:
+          type: array
+          items:
+            "$ref": "#/components/schemas/metaInformation"
+
+    Maintainer:
+      description: The person or organization responsible for maintaining the API.
+      required:
+      - name
+      properties:
+        name:
+          type: string
+          description: name
+          minLength: 5
+      additionalProperties:
+        type: string
+
+    metaInformation:
+      description: Metadata about the API
+      required:
+      - key
+      - value
+      properties:
+        key:
+          type: string
+        value:
+          type: string
+
+    Contact:
+      description: Information on contacting the API support
+      required:
+        - FN
+      properties:
+        FN:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          format: email
+        organizationName:
+          type: string
+          minLength: 1
+        adr:
+          type: string
+        tel:
+          type: string
+          minLength: 1
+        X-github:
+          type: string
+        photo:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+        vCard:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+        url:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+
+    Property:
+      description: A representation of a URL
+      required:
+      - type
+      - url
+      properties:
+        type:
+          type: string
+          pattern: "^(Swagger)$|^(RAML)$|^(Blueprint)$|^(WADL)$|^(WSDL)$|^(TermsOfService)$|^(InterfaceLicense)$|^(StatusPage)$|^(Pricing)$|^(Forums)$|^(AlertsTwitterHandle)$|^(X-[A-Za-z0-9\\-]*)$"
+        url:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+
+    Tag:
+      description: A consistent set of tag to apply to a description
+
+    Include:
+      description: Include other APIs.json file
+      required:
+      - name
+      - url
+      properties:
+        name:
+          type: string
+          minLength: 1
+        url:
+          type: string
+          pattern: "^(http)|(https)://(.*)$"
+
+    Latest:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    LatestRules:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    LatestProperties:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    LatestPropertiesRules:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string       
+
+    UpdateProperties:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    UpdateTags:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string  
+
+    UpdateMaintainers:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string       
+
+    PublishAPIs:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string 
+
+    PublishProperties:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string   
+
+    PublishTags:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string  
+
+    PublishMaintainers:
+      description: Results of latest pull.
+      required:
+        - name
+        - description
+        - run
+      properties:
+        status:
+          type: string   
+        description:
+          type: string  
+        run:
+          type: string                                                                                   
+
+    Then:
+      type: object
+      items:
+        $ref: "#/components/schemas/PathExpression"
+
+    Rule:
+      type: object
+      properties:
+        description:
+          type: string
+        documentationUrl:
+          type: string
+          format: url
+        recommended:
+          type: boolean
+        given:
+          $ref: "#/components/schemas/Given"
+        resolved:
+          type: boolean
+        severity:
+          $ref: "#/components/schemas/Severity"
+        message:
+          type: string
+        tags:
+          items:
+            type: string
+          type: array
+        formats:
+          $ref: "#/components/schemas/Formats"
+        then:
+          type: array
+          items:
+            $ref: "#/components/schemas/Then"
+        type:
+          enum:
+          - style
+          - validation
+          type: string
+        extensions:
+          type: object
+      required:
+        - given
+        - then
+
+    Formats:
+      type: array
+      items:
+        $ref: "#/components/schemas/Format"
+
+    Format:
+      type: string
+
+    DiagnosticSeverity:
+      enum:
+        - -1
+        - 0
+        - 1
+        - 2
+        - 3
+
+    HumanReadableSeverity:
+      enum:
+      - error
+      - warn
+      - info
+      - hint
+      - off
+
+    Severity:
+      type: object
+      oneOf:
+        - $ref: "#/components/schemas/DiagnosticSeverity"
+        - $ref: "#/components/schemas/HumanReadableSeverity"
+
+    Given:
+      type: array
+      items:
+        "$ref": "#/components/schemas/PathExpression"
+      minItems: 1
+
+    PathExpression:
+      type: string
+      pattern: "^\\$"

@@ -2,6 +2,7 @@
 layout: page
 title: SDKs
 ---
+# {{ page.title }}
 We offer a suite of auto-generated SDKs, using the [OpenAPI](https://search-docs.apis.io/openapi.yml) for the APIs.io Search API to generate client SDKs in the following languages.
 
 {% assign sdks = site.data.sdks %}

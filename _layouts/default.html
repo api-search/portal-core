@@ -1,40 +1,87 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.name }} - {{ page.title }}</title>
+    <link href="{{ site.url }}/assets/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/sticky-footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">{{ site.name }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{ site.url }}/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/about/">About</a>
+            </li>                                      
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/authentication/">Auth</a>
+            </li>      
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/documentation/">Docs</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/plans/">Plans</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/sdks/">SDKs</a>
+            </li>                           
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/blog/">Blog</a>
+            </li>        
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/videos/">Videos</a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}/support/">Support</a>
+            </li>                                                                      
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--
+    <div class="alert alert-danger" role="alert" style="text-align: center;">
+      This Search is in an Alpha Stage -- <a href="https://github.com/api-search/explore/issues">Submit An Issue</a>!
+    </div>
+    -->
+    <div class="container my-5">
+      {{ content }}
+    </div>
 
-    {% include head.html %}
+    <script src="{{ site.url }}/assets/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.url }}/assets/js-yaml.min.js"></script>
 
-    {% if page.hero %}
-        {% include hero.html %}
-    {% else %}
-        {% include navbar.html %}
-    {% endif %}
+    <footer class="footer">
+      <div class="container">
+        <table cellspacing="5" cellpadding="5" align="center">
+          <tr>
+            <td><a href="https://apis.io" style="color: #000;">APIs.io</a></td>
+            <td>|</td>
+            <td><a href="https://apisjson.org" style="color: #000;">APIs.json</a></td>
+            <td>|</td>
+            <td><a href="https://apicommons.org" style="color: #000;">API Commons</a></td>
+            <td>|</td>
+            <td><a href="/change-log" style="color: #000;">Change Log</a></td>
+            <td>|</td>
+            <td><a href="/road-map" style="color: #000;">Road Map</a></td>
+            <td>|</td>
+            <td><a href="/terms-of-service" style="color: #000;">Terms of Services</a></td>    
+            <td>|</td>
+            <td><a href="/privacy-policy" style="color: #000;">Privacy Policy</a></td>  
+            <td>|</td>
+            <td><a href="/sitemap.xml" style="color: #000;">Sitemap.xml</a></td>                                    
+          </tr>
+        </table>
+      </div>
+    </footer>
 
-    <style>
-        ul{
-            padding: 10px 25px 25px 25px;
-            margin: 10px 25px 25px 25px;
-        }
-    </style>
-
-    {{ content }}
-
-    {% include offcanvas-docs.html %}
-
-    {% include offcanvas.html %}
-
-    {% if page.layout != 'doc' %}
-        {% include footer.html %}
-    {% endif %}
-
-    {% if page.layout == 'doc' %}
-        {% include hook-pre-closing-body-doc.html %}
-    {% endif %}
-
-    {% include hook-pre-closing-body.html %}
-
-    <script src="/assets/swagger/swagger-ui-bundle.js" charset="UTF-8"> </script>
-    <script src="/assets/swagger/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
-    <script src="/assets/swagger/swagger-initializer.js" charset="UTF-8"> </script>    
-    </body>
-
+  </body>
 </html>

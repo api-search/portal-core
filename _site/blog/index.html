@@ -1,504 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-    <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>APIs.io Developer Blog | APIs.io API Developer Portal</title>
-<meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="APIs.io Developer Blog" />
-<meta name="author" content="Kin Lane" />
-<meta property="og:locale" content="en" />
-<meta name="description" content="The developer portal for the APIs.io API Search API." />
-<meta property="og:description" content="The developer portal for the APIs.io API Search API." />
-<link rel="canonical" href="http://localhost:4000/blog/" />
-<meta property="og:url" content="http://localhost:4000/blog/" />
-<meta property="og:site_name" content="APIs.io API Developer Portal" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="APIs.io Developer Blog" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Kin Lane"},"description":"The developer portal for the APIs.io API Search API.","headline":"APIs.io Developer Blog","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-search-logo.jpg"},"name":"Kin Lane"},"url":"http://localhost:4000/blog/"}</script>
-<!-- End Jekyll SEO tag -->
-
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
-	<link rel="icon" type="image/x-icon" href="https://apievangelist.com/favicon.ico">
-
-  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
-
-  <script src="/assets/js/main.js"></script>
-
-  
-  
-  
-  
-    
-
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="APIs.io Developer Blog by The ">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="The developer portal for the APIs.io API Search API.">
-  <meta property="og:image"  content="">
-
-  <meta name="twitter:url" content="">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="APIs.io Developer Blog by The ">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:description" content="The developer portal for the APIs.io API Search API.">
-
-  
-  
-  <meta name="twitter:image" content="">
-
-  <link rel="stylesheet" type="text/css" href="/assets/swagger/swagger-ui.css" />
-
-  <script src="/assets/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/assets/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-
-<body>
-  
-</head>
-
-    
-        <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
-    <nav class="uk-navbar-container">
-        <div class="uk-container">
-            <div data-uk-navbar>
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo uk-visible@m" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-search-logo.jpg" alt="" style="width: 175px;margin-right: 20px; margin-left: 150px;"></a>
-                    
-                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Docs</span></a>
-                    
-
-                    <ul class="uk-navbar-nav uk-visible@m">
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/" >Home</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/about" >About</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/authentication" >Auth</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/documentation" >Docs</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/plans" >Plans</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/blog" >Blog</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/videos" >Videos</a></li>
-                                                                                                        
-                                
-                            
-                        
-                            
-                            
-                            
-                                
-                                    
-                                        <li><a href="/support" >Support</a></li>
-                                                                                                        
-                                
-                            
-                        
-                    </ul>
-                </div>
-                <div class="uk-navbar-center uk-hidden@m">
-                    <a class="uk-navbar-item uk-logo" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-search-logo.jpg" alt=""></a>
-                </div>
-                <div class="uk-navbar-right">
-                    
-
-                    <ul class="uk-navbar-nav uk-visible@m">
-                        
-                    </ul>
-
-                    
-                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
-                    
-
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APIs.io - APIs.io Developer Blog</title>
+    <link href="http://localhost:4000/assets/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost:4000/assets/sticky-footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">APIs.io</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:4000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/about/">About</a>
+            </li>                                      
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/authentication/">Auth</a>
+            </li>      
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/documentation/">Docs</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/plans/">Plans</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/sdks/">SDKs</a>
+            </li>                           
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/blog/">Blog</a>
+            </li>        
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/videos/">Videos</a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/support/">Support</a>
+            </li>                                                                      
+          </ul>
         </div>
+      </div>
     </nav>
-</div>
-    
+    <!--
+    <div class="alert alert-danger" role="alert" style="text-align: center;">
+      This Search is in an Alpha Stage -- <a href="https://github.com/api-search/explore/issues">Submit An Issue</a>!
+    </div>
+    -->
+    <div class="container my-5">
+      <h1>APIs.io Developer Blog</h1><br>
 
-    <style>
-        ul{
-            padding: 10px 25px 25px 25px;
-            margin: 10px 25px 25px 25px;
-        }
-    </style>
+<h2><a href="/2023/12/05/welcome-to-apis-io/" style="color:#000;">Welcome to APIs.io</a></h2>
 
-    <div class="uk-section">
-    <div class="uk-container uk-container-xsmall">
+<a href="/2023/12/05/welcome-to-apis-io/" style="text-decoration: none; color:#000;"><i>Dec 5, 2023</i> APIs.io is the first API search engine. Built on top of the APIs.json specification, APIs.io empowers API producers to publish APIs.json indexes of their API operations. APIs.json provides metadata about each API being published, but also the things humans need to put APIs to work like a sign-up, documentation, and pricing page, but also the things other systems will need like an OpenAPI or JSON Schema artifact. APIs.io was first launched alongside the APIs.json specification, but is now being rebooted in 2023.
 
-        <h1 class="uk-article-title uk-text-center">APIs.io Developer Blog (<a href="/atom.xml" target="_blank">RSS</a>)</h1>
+.</a>
+<br><br><br>
 
-        
-        
-        <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium card-post uk-inline border-radius-medium border-xlight uk-width-1-1 uk-margin">
-            <a class="uk-position-cover" href="/2023/12/05/welcome-to-apis-io/"></a>
-            <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    
-                    
+<h2><a href="/2023/12/05/how-the-api-search-works/" style="color:#000;">How the APIs.io Search Works</a></h2>
 
-                    
-                  
-                  
-                    <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Welcome to APIs.io</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2023-12-05T00:00:00-05:00">
-                            
-                            Dec 5, 2023
-                        </time></p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-card-body">
-                <img src="https://developer.apis.io/images/apis-io.jpg" width="25%" align="left" style="padding: 10px; margin-top: 15px;">APIs.io is the first API search engine. Built on top of the APIs.json specification, APIs.io empowers API producers to publish APIs.json indexes of their API operations. APIs.json provides metadata about each API being published, but also the things humans need to put APIs to work like a sign-up, documentation, and pricing page, but also the things other systems will need like an OpenAPI or JSON Schema artifact. APIs.io was first launched alongside the APIs.json specification, but is now b...
-            </div>
-            <div class="uk-card-footer">
-                <span class="uk-button uk-button-text">Read more &rarr;</span>
-            </div>
+<a href="/2023/12/05/how-the-api-search-works/" style="text-decoration: none; color:#000;"><i>Dec 5, 2023</i> API search is hard. We haven’t seen a successful solution emerge in the last 20 years, and I think we need to think differently when it comes to this problem. We have a lot of ideas about how search should work, but we wanted to take incremental steps towards testing out what people (and systems) need when it comes to discovering APIs.
 
-        </div>
-        
-        
-        <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium card-post uk-inline border-radius-medium border-xlight uk-width-1-1 uk-margin">
-            <a class="uk-position-cover" href="/2023/12/05/how-the-api-search-works/"></a>
-            <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    
-                    
+.</a>
+<br><br><br>
 
-                    
-                  
-                  
-                    <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">How the APIs.io Search Works</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2023-12-05T00:00:00-05:00">
-                            
-                            Dec 5, 2023
-                        </time></p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-card-body">
-                <img src="https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-transparency.jpg" width="25%" align="left" style="padding: 10px; margin-top: 15px;">API search is hard. We haven’t seen a successful solution emerge in the last 20 years, and I think we need to think differently when it comes to this problem. We have a lot of ideas about how search should work, but we wanted to take incremental steps towards testing out what people (and systems) need when it comes to discovering APIs.
+<h2><a href="/2023/12/05/apis-io-has-a-spectral-powered-api-ratings-system-copy/" style="color:#000;">APIs.io Has a Spectral Powered API Ratings System</a></h2>
 
+<a href="/2023/12/05/apis-io-has-a-spectral-powered-api-ratings-system-copy/" style="text-decoration: none; color:#000;"><i>Dec 5, 2023</i> When Steve asked me what we could do with APIs.io, I knew I wanted to improve upon what APIs.io v1 was as an API search, but I also lay the groundwork for what we need to help alleviate our API discovery pain. Every time I have made an investment in API discovery over the last decade, I also find myself considering what constitutes a good API, as well as a bad API, but also effectively dealing with the change that is inevitable across the API landscape. I knew that search would be important for the new APIs.io, something I”ll write a separate post about, but I new that an APIs rating system for APIs.io would play just as an important of a role.
 
-            </div>
-            <div class="uk-card-footer">
-                <span class="uk-button uk-button-text">Read more &rarr;</span>
-            </div>
+.</a>
+<br><br><br>
 
-        </div>
-        
-        
-        <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium card-post uk-inline border-radius-medium border-xlight uk-width-1-1 uk-margin">
-            <a class="uk-position-cover" href="/2023/12/05/apis-io-has-a-spectral-powered-api-ratings-system-copy/"></a>
-            <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    
-                    
+<h2><a href="/2023/08/13/apis-io-prototype/" style="color:#000;">An APIs.io Prototype</a></h2>
 
-                    
-                  
-                  
-                    <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">APIs.io Has a Spectral Powered API Ratings System</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2023-12-05T00:00:00-05:00">
-                            
-                            Dec 5, 2023
-                        </time></p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-card-body">
-                <img src="https://kinlane-productions2.s3.amazonaws.com/ratings-sytem.png" width="25%" align="left" style="padding: 10px; margin-top: 15px;">When Steve asked me what we could do with APIs.io, I knew I wanted to improve upon what APIs.io v1 was as an API search, but I also lay the groundwork for what we need to help alleviate our API discovery pain. Every time I have made an investment in API discovery over the last decade, I also find myself considering what constitutes a good API, as well as a bad API, but also effectively dealing with the change that is inevitable across the API landscape. I knew that search would be importan...
-            </div>
-            <div class="uk-card-footer">
-                <span class="uk-button uk-button-text">Read more &rarr;</span>
-            </div>
+<a href="/2023/08/13/apis-io-prototype/" style="text-decoration: none; color:#000;"><i>Aug 13, 2023</i> I wanted to develop a prototype of the APIs.io search that brought the API search engine back to life using the APIs.json format. However, in the same motion I wanted to address two shortcomings that we never got around to developing before: 1) having it actually pull and update the APIs.json file, and 2) providing a rating system for the APIs that would help us filter out the garbage and identify the high quality APIs.
 
-        </div>
-        
-        
-        <div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium card-post uk-inline border-radius-medium border-xlight uk-width-1-1 uk-margin">
-            <a class="uk-position-cover" href="/2023/08/13/apis-io-prototype/"></a>
-            <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    
-                    
-
-                    
-                  
-                  
-                    <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">An APIs.io Prototype</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2023-08-13T00:00:00-04:00">
-                            
-                            Aug 13, 2023
-                        </time></p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-card-body">
-                <img src="https://developer.apis.io/images/diagram-2.jpg" width="25%" align="left" style="padding: 10px; margin-top: 15px;">I wanted to develop a prototype of the APIs.io search that brought the API search engine back to life using the APIs.json format. However, in the same motion I wanted to address two shortcomings that we never got around to developing before: 1) having it actually pull and update the APIs.json file, and 2) providing a rating system for the APIs that would help us filter out the garbage and identify the high quality APIs.
-
-
-            </div>
-            <div class="uk-card-footer">
-                <span class="uk-button uk-button-text">Read more &rarr;</span>
-            </div>
-
-        </div>
-        
-
-        <!-- Pagination links -->
-<ul class="uk-pagination uk-margin-medium-top">
-     
-</ul>
+.</a>
+<br><br><br>
 
 
     </div>
-</div>
 
+    <script src="http://localhost:4000/assets/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost:4000/assets/js-yaml.min.js"></script>
 
-    <div id="offcanvas-docs" data-uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar">
+    <footer class="footer">
+      <div class="container">
+        <table cellspacing="5" cellpadding="5" align="center">
+          <tr>
+            <td><a href="https://apis.io" style="color: #000;">APIs.io</a></td>
+            <td>|</td>
+            <td><a href="https://apisjson.org" style="color: #000;">APIs.json</a></td>
+            <td>|</td>
+            <td><a href="https://apicommons.org" style="color: #000;">API Commons</a></td>
+            <td>|</td>
+            <td><a href="/change-log" style="color: #000;">Change Log</a></td>
+            <td>|</td>
+            <td><a href="/road-map" style="color: #000;">Road Map</a></td>
+            <td>|</td>
+            <td><a href="/terms-of-service" style="color: #000;">Terms of Services</a></td>    
+            <td>|</td>
+            <td><a href="/privacy-policy" style="color: #000;">Privacy Policy</a></td>  
+            <td>|</td>
+            <td><a href="/sitemap.xml" style="color: #000;">Sitemap.xml</a></td>                                    
+          </tr>
+        </table>
+      </div>
+    </footer>
 
-        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
-
-        
-
-    </div>
-</div>
-
-
-    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
-    <div class="uk-offcanvas-bar">
-
-        <a class="uk-logo uk-margin-small-bottom" href="/"><img src="https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-search-logo.jpg" alt=""></a>
-     
-        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
-      
-        <ul class="uk-nav uk-nav-primary uk-margin-top">
-            
-                
-
-                
-
-                
-                    <li><a href="/" >Home</a></li>
-                
-            
-                
-
-                
-
-                
-                    <li><a href="/docs/installation/" >Docs</a></li>
-                
-            
-                
-
-                
-
-                
-                    <li class="uk-active"><a href="/blog/" >Blog</a></li>
-                
-            
-                
-
-                
-
-                
-                    <li><a href="/changelog-timeline/" >Changelog</a></li>
-                
-            
-                
-
-                
-
-                
-                    <li><div class="uk-navbar-item"><a class="uk-button uk-button-success" href="/contact/" >Contact</a></div></li>
-                
-            
-        </ul>
-
-        <div class="uk-margin-top uk-text-center">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-                
-
-
-
-
-
-<div>
-    <a href="https://www.youtube.com" title="Youtube" data-uk-icon="icon: youtube" class="uk-icon-link uk-icon" target="_blank"></a>
-</div>
-
-
-<div>
-    <a href="https://github.com/api-search" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
-</div>
-
-
-
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-    
-        <footer class="uk-section uk-text-center uk-text-muted">
-    <div class="uk-container uk-container-small">
-
-        <div>
-            <ul class="uk-subnav uk-flex-center">
-                
-                    
-                    
-                    
-                        <li><a href="https://apis.io" target="_blank" >APIs.io</a></li>
-                    
-                
-                    
-                    
-                    
-                        <li><a href="/apis.json" >APIs.json</a></li>
-                    
-                
-                    
-                    
-                    
-                        <li><a href="/change-log" >Change Log</a></li>
-                    
-                
-                    
-                    
-                    
-                        <li><a href="/road-map" >Road Map</a></li>
-                    
-                
-                    
-                    
-                    
-                        <li><a href="/terms-of-service" >Terms of Services</a></li>
-                    
-                
-                    
-                    
-                    
-                        <li><a href="/privacy-policy" >Privacy Policy</a></li>
-                    
-                
-                    
-                    
-                    
-                        <li><a href="/sitemap.xml" >Sitemap.xml</a></li>
-                    
-                
-            </ul>
-        </div>
-        <div class="uk-margin-medium">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
-                
-
-
-
-
-
-<div>
-    <a href="https://www.youtube.com" title="Youtube" data-uk-icon="icon: youtube" class="uk-icon-link uk-icon" target="_blank"></a>
-</div>
-
-
-<div>
-    <a href="https://github.com/api-search" title="GitHub" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
-</div>
-
-
-
-            </div>
-        </div>
-        <div class="uk-margin-medium uk-text-small copyright link-secondary">APIs.io</div>
-
-    </div>
-</footer>
-
-    
-
-    
-
-    
-
-    <script src="/assets/swagger/swagger-ui-bundle.js" charset="UTF-8"> </script>
-    <script src="/assets/swagger/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
-    <script src="/assets/swagger/swagger-initializer.js" charset="UTF-8"> </script>    
-    </body>
-
+  </body>
 </html>

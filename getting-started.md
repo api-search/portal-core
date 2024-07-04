@@ -2,6 +2,7 @@
 layout: page
 title: Getting Started
 ---
+# {{ page.title }}
 We work to try and make it as easy as possible for you to get started using the APIs.io search engine, providing you with the following steps to follow.
 
 {% assign steps = site.data.getting-started %}

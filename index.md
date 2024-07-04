@@ -4,7 +4,7 @@ width: expand
 hero:
     subtitle: Search for APIs using the Internet's first API search engine API.
 ---
-
+<p>This is the developer portal for the <a href="https://apis.io">APIs.io search engine</a>, providing programmatic access to the APIs we have indexed, but also providing an example of how you can deliver your own API portal, publish an APIs.json, and make your APIs more easily discovered.
 <div class="container">
     <div class="row">
 
@@ -49,4 +49,5 @@ hero:
         </div>     
 
     </div>
-</div>
+</div><br>
+<p>This <a href="https://github.com/api-search/developer-portal">entire portal runs 100% on GitHub</a> and can easily be forked and used for your own API portal, providing a <a href="/apis.json">usable example of APIs.json</a>, but also how the open source discovery format can be used to make your API discovery and onboarding easier.</p>

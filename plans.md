@@ -2,6 +2,7 @@
 layout: page
 title: Plans
 ---
+# {{ page.title }}
 The search endpoint for APIs.io is wide open, but to integrate the API into your application we offer two plans, the basic entry level for the search, and the verified, which is what we use to administrate the search engine.
 
 {% assign plans = site.data.plans %}

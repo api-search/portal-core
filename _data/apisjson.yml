@@ -16,32 +16,17 @@ tags:
 
 # Time frame for API evolution
 created: '2023-07-26'
-modified: '2023-08-22'  
+modified: '2024-07-04'  
 
-url: https://developer.apis.io/apis-product.json
+url: https://developer.apis.io/apis.json
 
 apis:
 
   - name: Search API
     description: This is the API behind the APIs.io search engine.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://search-docs.apis.io
-    baseURL: https://search-api.apis.io 
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
+    humanURL: https://developer.apis.io/documentation
+    baseURL: https://search-api.apis.io    
     
     tags:
     
@@ -52,11 +37,11 @@ apis:
     properties:
 
       # Documentation
-      - type: documentation
-        url: https://search-docs.apis.io/
+      - type: Documentation
+        url: https://developer.apis.io/documentation
 
-      - type: openapi
-        url: https://search-docs.apis.io/openapi.yml 
+      - type: OpenAPI
+        url: _data/openapi-search.yml
 
 
     # VCard Contact 
@@ -68,13 +53,9 @@ apis:
   - name: Authentication API
     description: This is the API for turning your GitHub Personal Access Token into an API key you can pass in to make API calls to the APIs.io API.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://auth-docs.apis.io/
+    humanURL: https://developer.apis.io/documentation
     baseURL: https://auth-api.apis.io
 
-    maturity: 'Active'
-
-    access: 'Public'     
-    
     tags:
     
       - Authentication
@@ -83,352 +64,17 @@ apis:
     properties:
 
       # Documentation
-      - type: documentation
-        url: https://auth-docs.apis.io/
+      - type: Documentation
+        url: https://developer.apis.io/documentation/
 
-      - type: openapi
-        url: https://auth-docs.apis.io/openapi.yml
+      - type: OpenAPI
+        url: _data/openapi-auth.yml
 
     # VCard Contact 
     contact:
 
       - FN: APIs.io
         email: info@apis.io    
-
-  - name: Engine API
-    description: This is the API that regularly pulls the APIs.json, OpenAPI, and other properties.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://engine-docs.apis.io/
-    baseURL: https://engine-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Engine
-      - Harvest
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://engine-docs.apis.io/
-
-      - type: openapi
-        url: https://engine-docs.apis.io/openapi.yml
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apis.io 
-
-  - name: Linter API
-    description: This is the API definition for the APIs.io linter API, allowing for linting APIs.json and OpenAPI.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: http://linter-docs.apis.io
-    baseURL: https://linter-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Linter
-      - Spectral
-      - Rules
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: http://linter-docs.apis.io
-
-      - type: openapi
-        url: http://linter-docs.apis.ioopenapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apis.io   
-
-  - name: Maintainers API
-    description: This is the API for managing all the maintainers who are indexed as part of the APIs.io search engine.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://maintainers-docs.apis.io/
-    baseURL: https://maintainers-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Maintainers
-      - Companies
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://maintainers-docs.apis.io/
-
-      - type: openapi
-        url: https://maintainers-docs.apis.io/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apis.io 
-
-  - name: Properties API
-    description: This is the API for managing all the properties that are indexed as part of the APIs.io search engine.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://properties-docs.apis.io/
-    baseURL: https://properties-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Properties
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://properties-docs.apis.io/
-
-      - type: openapi
-        url: https://properties-docs.apis.io/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apievangelist.com
-
-  - name: Publishing API
-    description: This is the API that publishes APIs, maintainers, properties, and tags for the APIs.io search engine.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://publishing-docs.apis.io/
-    baseURL: ttps://publishing-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Publishing
-      - Directory
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://publishing-docs.apis.io/
-
-      - type: openapi
-        url: https://publishing-docs.apis.io/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apis.io 
-
-  - name: Ratings API
-    description: This is the ratings engine for the APIs.io API search engine.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://ratings-docs.apis.io/
-    baseURL: https://ratings-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Rating
-      - Ranking
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://ratings-docs.apis.io/
-
-      - type: openapi
-        url: https://ratings-docs.apis.io/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apis.io
-
-  - name: Rules API
-    description: This is the API for managing rules that are used to govern the APIs.io search engine.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://rules-docs.apis.io/
-    baseURL: https://rules-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Rules
-      - Spectral
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://rules-docs.apis.io/
-
-      - type: openapi
-        url: https://rules-docs.apis.io/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apis.io           
-
-  - name: Tags API
-    description: This is the API for managing the tags that are indexed as part of the APIs.io search engine.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-    humanURL: https://tags-docs.apis.io/
-    baseURL: https://tags-api.apis.io
-
-    # Design
-    # Pre-Release    
-    # Active
-    # Recommended
-    # Retired
-    # Deprecated
-    maturity: 'Active'
-
-    # Public
-    # Partner
-    # Internal
-    # Group
-    # Team
-    access: 'Public'     
-    
-    tags:
-    
-      - APIs
-      - Tags
-    
-    properties:
-
-      # Documentation
-      - type: documentation
-        url: https://tags-docs.apis.io/
-
-      - type: openapi
-        url: https://tags-docs.apis.io/openapi.yml 
-
-    # VCard Contact 
-    contact:
-
-      - FN: APIs.io
-        email: info@apievangelist.com
 
 common:
 

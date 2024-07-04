@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 ---
+# {{ page.title }}
 In this Privacy Policy (“Policy”), we describe how APis.io (“we,” or “us”) collects, uses, and discloses information that we obtain about visitors to our website apis.io (the “Site”) and the services available through our Site (collectively, the “Services”).
 
 By visiting the Site, or using any of our Services, you agree that your personal information will be handled as described in this Policy. Your use of our Site or Services, and any dispute over privacy, is subject to this Policy and our Terms of Service, including its applicable limitations on damages and the resolution of disputes. The APIs.io Terms of Service are incorporated by reference into this Policy.

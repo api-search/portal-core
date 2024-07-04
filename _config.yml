@@ -1,108 +1,22 @@
-title:              APIs.io API Developer Portal
-description:        The developer portal for the APIs.io API Search API.
-lang:               en
+name: APIs.io
+description: The first API search engine.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: /
 
-# Site subpath, e.g. /blog
-baseurl:            ""
+keywords:
 
-# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+  - APIs
+  - Search
+  - Discovery
+
 permalink: /:categories/:year/:month/:day/:title/
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-# Site base hostname & protocol, e.g. http://example.com
-url:                "https://developer.apis.io"
+categories_path : /categories.html
+tags_path : /tags.html
 
-# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-search-logo.jpg
+github_org: api-search
+github_repo: explore
 
-navbar:
-    sticky:         true
-    search:         false
-  
-# Default author settings
-author:
-    name:           Kin Lane
-    title:          API Evangelist
-    avatar:         https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
-
-# Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
-authors:
-    kin:
-      name:         Kin Lane
-      title:        API Evangelist
-      avatar:       https://kinlane-productions2.s3.amazonaws.com/kin-lane/kin-lane-cartoon-questioning.png
-      email:       'info@apievangelist.com'
-      affiliation: 'APIs.io'
-      github:      'kinlane'
-      linkedin:    'in/kinlane'
-      twitter:     ''          
-
-# Social icons displayed in footer
-social:
-    email:
-    website:
-    facebook:       
-    github:         https://github.com/api-search
-    linkedin:           
-    youtube:        https://www.youtube.com
-    mastodon:       
-
-# Share button
-share:
-    post:           true # Display share buttons on a post page
-    doc:            true # Display share buttons on a doc page
-    twitter:        username # Enable by adding Twitter handle 
-    facebook:       true # Enable by setting true (Facebook handle not required)
-
-# Default footer image settings
-footer:
-    copyright:      APIs.io
-
-# Disqus comments shortname, requires Disqus account https://disqus.com/
-disqus:
-    shortname:      # 1234
-
-# Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics: UA-1119465-51
-
-# Number of posts displayed on blog page
 paginate:           25
-
-# Blog path
 paginate_path:      "/blog/:num/"
-
-# Path to post content assets directory i.e post images, pdfs etc
-uploads:            /uploads/
-
-# Build settings
-markdown:           kramdown
-highlighter:        rouge
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-avatar
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-
-sass:
-  style:            compressed
-
-collections:
-  info:
-    output:         true
-  faqs:
-    output:         false
-  timeline:
-    output:         false
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path:         ""
-      type:         posts
-    values:
-      layout:       post

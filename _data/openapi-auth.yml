@@ -1,0 +1,94 @@
+openapi: 3.0.0
+
+info:
+
+  title: 'APIs.io Authentication API'
+  description: 'This is the API for managing authentication that are used to govern the APIs.io search engine.'
+  version: V1
+
+  contact:
+    name: Kin Lane
+    email: info@apievangelist.com
+
+servers:
+  - url: https://auth-api.apis.io  
+
+tags:
+
+  - name: Authentication
+    description: The authentication for the engine.          
+    
+paths:       
+                
+  /token/validation:               
+
+    post:
+      summary: Submit Token for Validation
+      description: 'Submit a GitHub token to validate as API key.'
+      operationId: submitAuthentication
+      tags:
+        - Authentication
+      requestBody:
+        description: A valid APIs.json.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/requestBodies/Authentication"
+            example:   
+              token: [your github token]    
+      responses:
+        "201":
+          description: 201 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Authentication"
+              example:
+                username: kinlane
+                message: Added as key to API plan.              
+      security:
+        - api_key: []  
+
+components:
+
+  requestBodies:
+
+
+    Validate:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Validate"
+      required: true                        
+  
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+  
+  schemas:
+
+    Validate:
+      type: object
+      required:
+      - token
+
+      properties:
+      
+        token:
+          type: string
+          description: A valid GitHub Personal Access Token
+          minLength: 25
+
+    Validation:
+      type: object
+      required:
+      - name
+
+      properties:
+      
+        username:
+          type: string
+          description: A GitHub User name.
+          minLength: 5

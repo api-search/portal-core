@@ -2,6 +2,7 @@
 layout: page
 title: Support
 ---
+# {{ page.title }}
 We offer a number of ways you can get support. APIs.io is an open source project, depending on the free time of a handful of people, so we lean on GitHub to support of the work, but we still recognize that LinkedIn is still a viable social network. However, most of the ongoing work and conversations around this project will occur via the discussions forum.
 
 {% assign supports = site.data.support %}
