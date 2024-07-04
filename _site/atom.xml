@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>APIs.io API Developer Portal</title>
-  <updated>2023-08-13T00:00:00Z</updated>
+  <title></title>
+  <updated>2023-12-05T00:00:00Z</updated>
   <link rel="self" href="http://localhost:4000/atom.xml"/>
   <author><name>Kin Lane</name></author>
   <id>http://localhost:4000/atom.xml</id>
 	<entry>
+    <title>Welcome to APIs.io</title>
+    <link href="http://apievangelist.com/2023/12/05/welcome-to-apis-io/"/>
+    <updated>2023-12-05T00:00:00Z</updated>
+    <content><![CDATA[APIs.io is the first API search engine. Built on top of the APIs.json specification, APIs.io empowers API producers to publish APIs.json indexes of their API operations. APIs.json provides metadata about each API being published, but also the things humans need to put APIs to work like a sign-up, documentation, and pricing page, but also the things other systems will need like an OpenAPI or JSON Schema artifact. APIs.io was first launched alongside the APIs.json specification, but is now being rebooted in 2023. The APIs.json Specification APIs.json is a specification format for defining your API operations, allowing you to maintain a machine-readable index of your public or private API landscape. The specification was created in 2014, and is something we have moved forward incrementally over the years, but have recently found more energy for lately as the API landscape continues to expand. Specification (Website) - The current JSON or YAML format you can put into any well-known location. Builder (Website) - A form for building APIs.json files quickly using a simple single page application. Artisanal (Repo) - A growing number of hand-crafted artisanal APIs.json for top API providers today. This work on the APIs.json specification is important. Code tends to be ephemeral in my experience, and the specifications are what matter over any specific open-source or code implementation that may come or go over the years, however tooling are also essential for the adoption of the specification, so we can’t just stop there. APIs Powering APIs.io APIs.io is primarily just an API, or more accurately, a suite of APIs. Because any honest API specification, service, and tooling should be API-first, APIs.io is API-first. APIs.io is powered by ten separate APIs that all work in concert to help solve the API discovery across the realm of public APIs. These APIs all live in their own repositories, with their own documentation, and other resources, making for a buffet of API discovery solutions. Engine (Documentation)) (Repo) - The API that actually pulls and processes the APIs.json files and the APIs they contain. Rules (Documentation)) (Repo) - A collection of YAML Spectral rules that identify healthy APIs.json and OpenAPI patterns. Ratings (Documentation)) (Repo) - Apply rules and other criteria to APIs.json and and OpenAPI to rate on overall quality. Linter (Documentation)) (Repo) - The API that takes the rules, applies them to APIs.json and OpenAPI, returning results. Maintainers (Documentation)) (Repo) - An API for managing the maintainers that are publishing the different APIs.json. Properties (Documentation)) (Repo) - Another API for managing all of the API and common properties in each APIs.json. Tags (Documentation)) (Repo) - The API for managing, enhancing, and making sense of the tags being applied to APis.json. Publishing (Documentation)) (Repo) - An API for publishing API indexes to static single page applications hosted on GitHub. Search (Documentation) (Repo) - The API that actually provides a search on top of all of the APIs in which the engine indexes. Authentication (Documentation) (Repo) - An API for authentication and generating a token so you...]]></content>
+    <id>http://apievangelist.com/2023/12/05/welcome-to-apis-io/</id>
+  </entry><entry>
+    <title>How the APIs.io Search Works</title>
+    <link href="http://apievangelist.com/2023/12/05/how-the-api-search-works/"/>
+    <updated>2023-12-05T00:00:00Z</updated>
+    <content><![CDATA[API search is hard. We haven’t seen a successful solution emerge in the last 20 years, and I think we need to think differently when it comes to this problem. We have a lot of ideas about how search should work, but we wanted to take incremental steps towards testing out what people (and systems) need when it comes to discovering APIs.
+
+Right now, the search on APIs.io is pretty simple, focusing on just a handful of areas that we feel can be individually iterated upon over time based upon what API producers need, what those search for APIs need, and what APIs.io and APIs.json need.
+
+
+  APIs.json - Each published APIs.json provides a modular index of an API operation in standard format.
+  APIs.io API - You can search for APIs indexed across APIs.json using keywords in title, description, tags.
+  APIs.io Website Search - You can search for APIs via autocomplete keyword search returning 25 results.
+  Search Engines - Each API has a static detail page which can be indexed and searched for via web search engines.
+
+
+That is it. That is all we have right now. We’d like to see more search solutions emerge that build on these four dimensions. However, there is also another important dimension to the APIs.io search – the APIs.io Rating System. This is ultimately what drives which way APIs get sorted via the API and the website search.
+
+We can see providing a standard paginated search results page as part of the website search, but we’d like to hear more answers to the following before we get to work.
+
+
+  How should the APIs.io API search work?
+  How is search different from Google?
+  How is search the same as Google?
+  Who will want to search for APIs?
+  Why will people search for APIs?
+  How will people search for APIs?
+
+
+Right now the search is pretty basic, but the seeds are there. The ratings system is in a similar state, it is pretty basic, but the rules-based approach has serious room for growth and dialing in. Together search and the ratings system, combined with the distributed approach of an APIs.json defined search will be what sets APIs.io apart from other implementations.
+
+Most of the APIs.json in the APIs.io index are hand-crafted by us. However, once API producers see their APIs listed, rated, and we showcase how consumers are searching, we are confident they’ll see the potential in maintaining their own APIs.jon file. This is when we feel that APIs.io will reach a new level in the API discovery conversation. The API producer defined index combined with the APIs.io search and rating system, will shift the API discovery conversation into the next stage.
+
+Have thoughts on API discovery, and how search should work? Join the Discussion.
+
+]]></content>
+    <id>http://apievangelist.com/2023/12/05/how-the-api-search-works/</id>
+  </entry><entry>
+    <title>APIs.io Has a Spectral Powered API Ratings System</title>
+    <link href="http://apievangelist.com/2023/12/05/apis-io-has-a-spectral-powered-api-ratings-system-copy/"/>
+    <updated>2023-12-05T00:00:00Z</updated>
+    <content><![CDATA[When Steve asked me what we could do with APIs.io, I knew I wanted to improve upon what APIs.io v1 was as an API search, but I also lay the groundwork for what we need to help alleviate our API discovery pain. Every time I have made an investment in API discovery over the last decade, I also find myself considering what constitutes a good API, as well as a bad API, but also effectively dealing with the change that is inevitable across the API landscape. I knew that search would be important for the new APIs.io, something I”ll write a separate post about, but I new that an APIs rating system for APIs.io would play just as an important of a role. APIs.io has a ratings API which the engine uses to rate the APIs.json as well as the APIs that are indexed within them. This API ratings system is defined and driven using the open source API listing tool Spectral. The open source Spectral is best known for listing OpenAPI and AsyncAPI, but it will work for any JSON or YAML schema, so we developed a base set of rules for APIs.json. Effectively linting not just your API, but your API operations. There is a Spectral rule for each APIs.json property, spanning potentially multiple APIs, but also the variety of properties of those APIs like having a sign up page, documentation, plans, terms of service, SDKs, and other common building blocks of our public and private API portals. We have Spectral rules for linting the APIs.json, as well as OpenAPIs that are indexed for any API. We will eventually develop Spectral rules for AsyncAPI, JSON Schema, and other machine-readable properties. Each Spectral rule has points associated with it. Right now we have applied scores based upon my gut feeling as we crafted each rule, but it is something we will adjust over time to “dial-in” the ratings algorithm—rewarding the API operational patterns that matter the most. We am running the rules against all APIs indexed via APIs.io every week, so we will have a record over time regarding how an API has increased or decreased its overall rating based upon things inside and outside the control of each API producer. We am using Spectral to map the positive patterns we are looking for from API producers, then identify which of those patterns are present across many API producers. This is different than the way it is used for API governance, where you tend to highlight the patterns that are missing from an API. It is easy to quickly adapt the Spectral rules applied to API operations using APIs.json to help guide API producers when it comes to adding common building blocks, or essentially governing the delivery of an API across the API lifecycle. We will spend time grouping rules into different areas of the common API lifecycle, platform, or other view of our API operations to help reduce cognitive load when it comes to rating each API. We...]]></content>
+    <id>http://apievangelist.com/2023/12/05/apis-io-has-a-spectral-powered-api-ratings-system-copy/</id>
+  </entry><entry>
     <title>An APIs.io Prototype</title>
     <link href="http://apievangelist.com/2023/08/13/apis-io-prototype/"/>
     <updated>2023-08-13T00:00:00Z</updated>
