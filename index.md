@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Home
 width: expand
 hero:
     subtitle: Search for APIs using the Internet's first API search engine API.
