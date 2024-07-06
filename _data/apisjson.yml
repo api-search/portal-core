@@ -1,6 +1,5 @@
 # APIs JSON/YAML Specification Details
-specificationVersion: '0.16'
-specificationType: 'Consumer'
+specificationVersion: '0.18'
 
 # Overview of this API
 name: APIs.io
@@ -16,7 +15,7 @@ tags:
 
 # Time frame for API evolution
 created: '2023-07-26'
-modified: '2024-07-04'  
+modified: '2024-07-06'  
 
 url: https://developer.apis.io/apis.json
 
@@ -79,75 +78,62 @@ apis:
 common:
 
   # Workspaces
-  - type: github-repository
+  - type: GitHubRepository
     url: 'https://github.com/api-search/developer-portal' 
 
   # Onboarding
-  - type: api-getting-started
+  - type: GettingStarted
     url: 'https://developer.apis.io/getting-started/'  
 
-  - type: api-plans
+  - type: Plans
     url: 'https://developer.apis.io/plans/'         
 
-  - type: api-authentication
+  - type: Authentication
     url: 'https://developer.apis.io/authentication/'            
 
   # Change
-  - type: api-road-map
+  - type: RoadMap
     url: https://developer.apis.io/road-map/
 
-  - type: api-change-log
+  - type: ChangeLog
     url: https://developer.apis.io/change-log/                             
 
   # Code
-  - type: api-sdks
+  - type: SDKs
     url: https://developer.apis.io/sdks/                                          
 
   # Monitors
-  - type: api-uptime-monitor
+  - type: Monitor
     url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/monitor/Testing-Uptime---APIs-io-Search~1ee42164-0de2-4c80-b9a6-257e30c42c9e'    
 
 
   # Distribution
-  - type: api-developer-portal
+  - type: Portal
     url: 'https://developer.apis.io/'   
 
 
   # Communication
-  - type: blog
+  - type: Blog
     url: 'https://developer.apis.io/blog/' 
 
-  - type: videos
+  - type: Videos
     url: 'https://developer.apis.io/videos/'   
 
 
   # Feedback Loop
-  - type: issues
+  - type: Issues
     url: 'https://github.com/api-search/developer-portal/issues' 
 
-  - type: email
+  - type: Email
     url: 'info@apievangelist.com'
 
 
   # Legal
-  - type: api-terms-of-service
+  - type: TermsOfService
     url: 'https://developer.apis.io/terms-of-service/'  
     
-  - type: api-privacy-policy
+  - type: PrivacyPolicy
     url: 'https://developer.apis.io/privacy-policy/'            
-
-# Links to other related APIs.json
-include:
-
-  - name: Consummer APIs.io
-    url: https://developer.apis.io/apis-consumer.json   
-
-  - name: Engineering APIs.io
-    url: https://developer.apis.io/apis-engineering.json
-
-  - name: Platform APIs.io
-    url: https://developer.apis.io/apis-platform.json
-    
 
 # Who is maintaining this APIs.json
 maintainers:
