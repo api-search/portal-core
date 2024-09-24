@@ -15,7 +15,7 @@ tags:
 
 # Time frame for API evolution
 created: '2023-07-26'
-modified: '2024-07-06'  
+modified: '2024-09-05'  
 
 url: https://developer.apis.io/apis.json
 
@@ -39,9 +39,15 @@ apis:
       - type: Documentation
         url: https://developer.apis.io/documentation
 
+      # Technical Contract
       - type: OpenAPI
         url: _data/openapi-search.yml
 
+      - type: InterfaceLicense
+        url: http://example.com/interfacce-license  
+
+      - type: GitHubRepository
+        url: https://github.com/api-search/search-api                  
 
     # VCard Contact 
     contact:
@@ -69,6 +75,9 @@ apis:
       - type: OpenAPI
         url: _data/openapi-auth.yml
 
+      - type: InterfaceLicense
+        url: http://example.com/interfacce-license           
+
     # VCard Contact 
     contact:
 
@@ -77,11 +86,10 @@ apis:
 
 common:
 
-  # Workspaces
-  - type: GitHubRepository
-    url: 'https://github.com/api-search/developer-portal' 
-
   # Onboarding
+  - type: Portal
+    url: https://developer.apis.io
+
   - type: GettingStarted
     url: 'https://developer.apis.io/getting-started/'  
 
@@ -104,36 +112,50 @@ common:
 
   # Monitors
   - type: Monitor
-    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/monitor/Testing-Uptime---APIs-io-Search~1ee42164-0de2-4c80-b9a6-257e30c42c9e'    
-
-
-  # Distribution
-  - type: Portal
-    url: 'https://developer.apis.io/'   
-
+    url: 'https://api-evangelist.postman.co/workspace/APIs.io-Private~a91b6fa0-9b59-4330-bec4-bf87c30b853a/monitor/Testing-Uptime---APIs-io-Search~1ee42164-0de2-4c80-b9a6-257e30c42c9e'
 
   # Communication
   - type: Blog
     url: 'https://developer.apis.io/blog/' 
 
+  - type: BlogFeed
+    url: https://developer.apis.io/atom.xml  
+
   - type: Videos
     url: 'https://developer.apis.io/videos/'   
 
+  # Support / Feedback Loop
+  - type: Forums
+    url: https://github.com/orgs/api-search/discussions
 
-  # Feedback Loop
+  - type: Support
+    url: https://developer.apis.io/support/    
+
   - type: Issues
     url: 'https://github.com/api-search/developer-portal/issues' 
 
   - type: Email
     url: 'info@apievangelist.com'
 
+  # Governance
+  - type: Policies
+    url: https://developer.apis.io/policies.yml
+
+  - type: ApisJsonRules
+    url:  https://developer.apis.io/apis-json-rules.yml
+
+  - type: OpenApiRules
+    url: https://developer.apis.io/openapi-rules.yml  
+
+  - type: Lifecycle
+    url: https://developer.apis.io/api-lifecycle.yml
 
   # Legal
   - type: TermsOfService
     url: 'https://developer.apis.io/terms-of-service/'  
     
   - type: PrivacyPolicy
-    url: 'https://developer.apis.io/privacy-policy/'            
+    url: 'https://developer.apis.io/privacy-policy/'           
 
 # Who is maintaining this APIs.json
 maintainers:
